@@ -31,7 +31,7 @@
 	text-decoration: none; 
 	display: block; 
 	padding-right: 10px;
-	font-size: 20px;
+	font-size: 30px;
     }
 	#lista > li
 	{ 
@@ -56,14 +56,14 @@
 .centrado
 {
   position: absolute;
-  top: 40%;
-  left: 50%;
+  top: 30%;
+  left: 30%;
 	margin-left: 10%;
 	color: white;
-	font-size: 400%;
+	font-size: 500%;
   text-align: center;
 }
-#imgprin
+.imgprin
 {
   position: absolute;
   margin-top: 5%;
@@ -87,12 +87,63 @@
    </ul>
    </nav>
  </div>
-    <div id="imgprin">
+ 
+    <!--<div id="imgprin">
     <img src="fondo1.jpg" alt=""/>
     </div>
    <div  class="centrado">
     <p><strong>KENTIA</strong></p>
-   </div>
+   </div>-->
 
+<div class="slideshow-container">
+  <div class="mySlides fade">
+    <div class="imgprin">
+    <img src="fondo2.jpg" >
+    </div>
+    <div class="centrado">KENTIA</div>
+  </div>
+
+  <div class="mySlides fade">
+   <div class="imgprin">
+    <img src="fondo1.jpg" >
+    </div>
+    <div class="centrado">yalitzia</div>
+  </div>
+
+ <div class="mySlides fade">
+   <div class="imgprin">
+    <img src="fondo3.jpg" >
+    </div>
+    <div class="centrado">yalitzia</div>
+  </div>
+
+
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 8000); // Change image every 2 seconds
+}
+</script>
 </body>
 </html>
