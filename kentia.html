@@ -92,10 +92,28 @@ width: 40%;
   font-size: 120%;
   width: 20%
 }
-#new1{
+#new1
+{
 position: absolute;
 top: 90%;
 left:10%;
+  }
+    #text1
+    {
+    position: absolute;
+    top: 90%;
+    left: 22%;
+    width: 10%;
+    background-color: #F6DADA;
+  color: black;
+  }
+  #news
+  {
+    position: absolute;
+top: 80%;
+left: 41%;
+text-align: center;
+
   }
 </style>
 </head>
@@ -154,11 +172,14 @@ left:10%;
   <span class="dot" onclick="currentSlide(2)"></span> 
   <span class="dot" onclick="currentSlide(3)"></span> 
 </div>
-
-
+<div id="news">
+  <br>
+  <h2> NEWS / YANKUIK </h2>
+</div>
 <div id="new1" >
       <img src="new1.jpg" width="200" height="300" > 
        </div>
+        <div id="text1" > <p>El jurado ha seleccionado las firmas que optarán a la final. Es un paso más en esta VIII edición del certamen de Vogue que premia el talento emergente de la moda</p><h3><a href="">Carlota Barrera, Ernesto Naranjo y Oteyza: los 3 finalistas de Who's On Next 2019</a> </h3></div>
 <script>
 var slideIndex = 0;
 showSlides();
