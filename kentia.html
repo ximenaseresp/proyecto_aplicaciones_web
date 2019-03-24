@@ -11,6 +11,31 @@ text-align:right;
 left: 40%;
 top: 10%;
 }
+   ul, ol
+    {
+    list-style: none;
+    }
+  nav.n
+  {
+  text-align: right;
+  width: 950px;
+  list-style: none;
+  margin-left: auto;
+  }
+  .lista li a
+  { 
+  background: white; 
+  color: black;
+  text-decoration: none; 
+  display: block; 
+  padding-right: 20px;
+  font-size: 25px;
+  font-family: Palatino, URW Palladio L, serif;
+    }
+  .lista > li
+  { 
+    float: right;
+  }
 .n-link::before {
     content: "";
     position: absolute;
@@ -21,12 +46,14 @@ top: 10%;
     background: rgba(0,0,0,0.2);
     opacity: 0;
     -webkit-transform: translate(0, 10px);
+     transform: translate(0, 10px);
     transition: opacity 0.3s ease, transform 0.3s ease;
 }
 .n-link:hover::before,
 .n-link:hover::before {
     opacity: 1;
     -webkit-transform: translate(0, 5px);
+     transform: translate(0, 5px);
 }
 .n-link,
 .n-link:link, 
@@ -38,7 +65,7 @@ top: 10%;
 .submenu-link:active {
     display: block;
     position: relative;
-    font-size: 14px;
+    font-size:25px;
     letter-spacing: 1px;
     cursor: pointer;
     text-decoration: none;
@@ -53,6 +80,101 @@ top: 10%;
     color: black;
 
 }
+.dropdown {
+    position: relative;
+}
+
+.dropdown .n-link {
+    padding-right: 15px;
+    height: 17px;
+    line-height: 17px;
+}
+
+.dropdown .n-link::after {
+    content: "";
+    position:absolute;
+    top: 6px;
+    right: 0;
+    border: 5px solid transparent;
+    border-top-color: #fff;
+}
+.submenu {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    z-index: 100;
+    width: 320px;
+    margin-left: -100px;
+    background: #fff;
+    border-radius: 3px;
+    line-height: 1.46667;
+    margin-top: -5px;
+    box-shadow: 0 0 8px rgba(0,0,0,.3);
+    opacity:0;
+    -webkit-transform: translate(0, 0) scale(.85);
+    transform: translate(0, 0)scale(.85);
+    transition: transform 0.1s ease-out, opacity 0.1s ease-out;
+    pointer-events: none;
+}
+
+.submenu::after, 
+.submenu::before {
+    content: ""; 
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -80px;
+    border: 10px solid transparent;
+    height: 0;
+}
+
+.submenu::after {
+    border-bottom-color: #fff;
+}
+
+.submenu::before {
+    margin-left: -13px;
+    border: 13px solid transparent;
+    border-bottom-color: rgba(0,0,0,.1);
+    -webkit-filter:blur(1px);
+    filter:blur(1px);
+}
+
+.submenu-items {
+    list-style: none;
+    padding: 10px 0;
+}
+
+.submenu-item {
+    display: block;
+    text-align: left;
+    font-size: 24px;
+}
+
+.submenu-link,
+.submenu-link:link, 
+.submenu-link:visited, 
+.submenu-link:active {
+    color: black;
+    padding: 10px 20px;
+}
+
+.submenu-link:hover {
+    text-decoration: underline;
+}
+
+.submenu-seperator {
+    height: 0;
+    margin: 12px 10px;
+    border-top: 1px solid #eee;
+}
+
+.show-submenu .submenu {
+    opacity: 1;
+    -webkit-transform: translate(0, 25px) scale(1);
+    transform: translate(0, 25px) scale(1);
+    pointer-events: auto;
+}
 /*	#navegacion
 	{
 	margin: auto; 
@@ -62,37 +184,13 @@ top: 10%;
   margin-top: 5%;
     } 
     */
-    ul, ol
-    {
-    list-style: none;
-    }
-	nav.n
-	{
-	text-align: right;
-	width: 950px;
-	list-style: none;
-	margin-left: auto;
-	}
-	#lista li a
-	{ 
-	background: white; 
-	color: black;
-	text-decoration: none; 
-	display: block; 
-	padding-right: 20px;
-	font-size: 30px;
-  font-family: Palatino, URW Palladio L, serif;
-    }
-	#lista > li
-	{ 
-		float: right;
-	}
+ 
   /*  #lista li a:hover
     { 
     	background: #EABCDB;
     }
     */
-    #lista li ul
+    /*#lista li ul
     { 
     	display: none; 
     	position: absolute;
@@ -112,7 +210,7 @@ top: 10%;
         padding-top: 10px;
         right: 23px;
        }
- 
+ */
 #lin1
 {
 top: 8%;
@@ -288,25 +386,71 @@ font-family: Didot, serif;
  
 <div class="nav">
   <nav class="n">
-  <ul id="lista">
-   <li ><a href="" class="n-link">contacto</a>
- <!--<ul>
-<li ><a href="">instagram</a></li>
-<li ><a href="">twitter</a></li>
- </ul>-->
- </li> 
-   <li><a href=""  class="n-link">pasarelas</a>
-  <!-- <ul>
-<li ><a href="">fashion weeks</a></li>
-<li ><a href="">other</a></li>
- </ul>
---> </li>
+  <ul class="lista">
+<li class="dropdown">
+            <a href="#" class="n-link"><span>contacto </span></a>
+            <nav class="submenu">
+                <ul class="submenu-items">
+                    <li class="submenu-item"><a href="#" class="submenu-link">instagram</a></li>
+                    <li class="submenu-item"><a href="#" class="submenu-link">twitter</a></li>
+                    <li class="submenu-item"><a href="#" class="submenu-link">kentiatlx@contactus.com
+                    </a></li>
+                </ul>
+            </nav>
+        </li> 
+
+<li class="dropdown">
+            <a href="#" class="n-link"><span>pasarelas </span></a>
+            <nav class="submenu">
+                <ul class="submenu-items">
+                    <li class="submenu-item"><a href="#" class="submenu-link">fashion weeks</a></li>
+                    <li class="submenu-item"><a href="#" class="submenu-link">
+                    regular runways
+                    </a></li>
+                </ul>
+            </nav>
+        </li> 
   
-   <li><a href=""  class="n-link" >cultura </a></li>
-  
-   <li><a href=""  class="n-link">beauty </a></li>
-  
-   <li><a href=""  class="n-link">moda</a></li>
+ <li class="dropdown">
+            <a href="#" class="n-link"><span>cultura </span></a>
+            <nav class="submenu">
+                <ul class="submenu-items">
+                    <li class="submenu-item"><a href="#" class="submenu-link">arte</a></li>
+                    <li class="submenu-item"><a href="#" class="submenu-link">
+                    diseño
+                    </a></li>
+                    <li class="submenu-item"><a href="#" class="submenu-link">
+                    sostenibilidad
+                    </a></li>
+                </ul>
+            </nav>
+        </li>
+  <li class="dropdown">
+            <a href="#" class="n-link"><span>kualneskayotl / belleza </span></a>
+            <nav class="submenu">
+                <ul class="submenu-items">
+                    <li class="submenu-item"><a href="#" class="submenu-link">tendencias</a></li>
+                    <li class="submenu-item"><a href="#" class="submenu-link">
+                    noticias
+                    </a></li>
+
+                </ul>
+            </nav>
+        </li>
+  <li class="dropdown">
+            <a href="#" class="n-link"><span>moda </span></a>
+            <nav class="submenu">
+                <ul class="submenu-items">
+                    <li class="submenu-item"><a href="#" class="submenu-link">noticias</a></li>
+                    <li class="submenu-item"><a href="#" class="submenu-link">
+                    tendencias
+                    </a></li>
+                    <li class="submenu-item"><a href="#" class="submenu-link">
+                   feminismo en la moda
+                    </a></li>
+                </ul>
+            </nav>
+        </li>
    </ul>
    </nav>
  </div>
@@ -362,7 +506,7 @@ font-family: Didot, serif;
 <div id="new1" >
       <img src="new1.jpg" width="250" height="380" > 
        </div>
-        <div id="text1" > <h2><a href="">Carlota Barrera, Ernesto Naranjo y Oteyza: los 3 finalistas de Who's On Next 2019</a> </h2><p>El jurado ha seleccionado las firmas que optarán a la final. Es un paso más en esta VIII edición del certamen de Vogue que premia el talento emergente de la moda</p>
+        <div id="text1" > <h2><a href="" class="submenu-items">Carlota Barrera, Ernesto Naranjo y Oteyza: los 3 finalistas de Who's On Next 2019</a> </h2><p>El jurado ha seleccionado las firmas que optarán a la final. Es un paso más en esta VIII edición del certamen de Vogue que premia el talento emergente de la moda</p>
         </div>
         <div id="new2">
           <img src="new2.jpg" width="300" height="450" > 
@@ -412,8 +556,8 @@ function showSlides() {
   setTimeout(showSlides, 8000); 
 }
 </script>
-<!-- <script >
-  [].slice.call(document.querySelectorAll('.dropdown .nav-link')).forEach(function(el){
+<script >
+  [].slice.call(document.querySelectorAll('.dropdown .n-link')).forEach(function(el){
     el.addEventListener('click', onClick, false);
 });
 
@@ -439,6 +583,6 @@ function hideSubMenu(el){
     el.classList.remove('show-submenu');
 }
 </script>
--->
+
 </body>
 </html>
