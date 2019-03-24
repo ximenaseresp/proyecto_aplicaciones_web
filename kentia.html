@@ -4,12 +4,54 @@
 <meta charset="utf-8">
 <title>kentia</title>
 <style>
-#nav{
-  position: absolute;
-    width:950px; 
-  text-align:right;
+.nav{
+position: absolute;
+width:950px; 
+text-align:right;
 left: 40%;
 top: 10%;
+}
+.n-link::before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 10%;
+    width: 60%;
+    height: 3px;
+    background: rgba(0,0,0,0.2);
+    opacity: 0;
+    -webkit-transform: translate(0, 10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+.n-link:hover::before,
+.n-link:hover::before {
+    opacity: 1;
+    -webkit-transform: translate(0, 5px);
+}
+.n-link,
+.n-link:link, 
+.n-link:visited, 
+.n-link:active,
+.submenu-link,
+.submenu-link:link, 
+.submenu-link:visited, 
+.submenu-link:active {
+    display: block;
+    position: relative;
+    font-size: 14px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    text-decoration: none;
+    outline: none;
+    color: black;
+}
+
+.n-link,
+.n-link:link, 
+.n-link:visited, 
+.n-link:active {
+    color: black;
+
 }
 /*	#navegacion
 	{
@@ -37,7 +79,7 @@ top: 10%;
 	color: black;
 	text-decoration: none; 
 	display: block; 
-	padding-right: 10px;
+	padding-right: 20px;
 	font-size: 30px;
   font-family: Palatino, URW Palladio L, serif;
     }
@@ -45,16 +87,16 @@ top: 10%;
 	{ 
 		float: right;
 	}
-    #lista li a:hover
+  /*  #lista li a:hover
     { 
     	background: #EABCDB;
     }
+    */
     #lista li ul
     { 
     	display: none; 
     	position: absolute;
-      
-      padding-bottom: 1px;
+
     }
     #lista li:hover > ul
     {
@@ -63,11 +105,12 @@ top: 10%;
     }
       #lista li ul li a
       {
+        position: relative;
         font-size: 20px;
-        text-align: right;
+   
         padding-bottom: 10px;
         padding-top: 10px;
-        padding-right: -10px;
+        right: 23px;
        }
  
 #lin1
@@ -242,26 +285,28 @@ font-family: Didot, serif;
 </head>
 <body>
     <div id="mainheading"><h1>KENTIA</h1></div>
-	<div id="nav">
+ 
+<div class="nav">
   <nav class="n">
   <ul id="lista">
-   <li ><a href="">contacto</a>
- <ul>
+   <li ><a href="" class="n-link">contacto</a>
+ <!--<ul>
 <li ><a href="">instagram</a></li>
 <li ><a href="">twitter</a></li>
- </ul>
- </li>
-   <li><a href="">pasarelas</a>
-    <ul>
+ </ul>-->
+ </li> 
+   <li><a href=""  class="n-link">pasarelas</a>
+  <!-- <ul>
 <li ><a href="">fashion weeks</a></li>
-<li ><a href="">twitter</a></li>
- </ul></li>
+<li ><a href="">other</a></li>
+ </ul>
+--> </li>
   
-   <li><a href="">cultura </a></li>
+   <li><a href=""  class="n-link" >cultura </a></li>
   
-   <li><a href="">beauty </a></li>
+   <li><a href=""  class="n-link">beauty </a></li>
   
-   <li><a href="">moda</a></li>
+   <li><a href=""  class="n-link">moda</a></li>
    </ul>
    </nav>
  </div>
@@ -367,6 +412,33 @@ function showSlides() {
   setTimeout(showSlides, 8000); 
 }
 </script>
+<!-- <script >
+  [].slice.call(document.querySelectorAll('.dropdown .nav-link')).forEach(function(el){
+    el.addEventListener('click', onClick, false);
+});
 
+function onClick(e){
+    e.preventDefault();
+    var el = this.parentNode;
+    el.classList.contains('show-submenu') ? hideSubMenu(el) : showSubMenu(el);
+}
+
+function showSubMenu(el){
+    el.classList.add('show-submenu');
+    document.addEventListener('click', function onDocClick(e){
+        e.preventDefault();
+        if(el.contains(e.target)){
+            return;
+        }
+        document.removeEventListener('click', onDocClick);
+        hideSubMenu(el);
+    });
+}
+
+function hideSubMenu(el){
+    el.classList.remove('show-submenu');
+}
+</script>
+-->
 </body>
 </html>
