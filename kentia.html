@@ -10,193 +10,43 @@
     width: 980px;
     height:1000px;
   }
-.nav{
-position: absolute;
-width:850px; 
-text-align:right;
-left: 80%;
-top: 7%;
-}
-   ul, ol
-    {
-    list-style: none;
-    }
-  nav.n
-  {
-  text-align: right;
-  width: 950px;
-  list-style: none;
-  margin-left: auto;
-  }
-  .lista li a
-  { 
-  background: white; 
-  color: black;
-  text-decoration: none; 
-  display: block; 
-  padding-right: 20px;
-  font-size: 25px;
-  font-family: Palatino, URW Palladio L, serif;
-    }
-  .lista > li
-  { 
-    float: right;
-  }
-.n-link::before {
-    content: "";
+
+  .menuCSS3{
+    z-index: 1;
     position: absolute;
-    top: 100%;
-    left: 10%;
-    width: 60%;
-    height: 3px;
-    background: rgba(0,0,0,0.2);
-    opacity: 0;
-    -webkit-transform: translate(0, 10px);
-     transform: translate(0, 10px);
-    transition: opacity 0.3s ease, transform 0.3s ease;
-}
-.n-link:hover::before,
-.n-link:hover::before {
-    opacity: 1;
-    -webkit-transform: translate(0, 5px);
-     transform: translate(0, 5px);
-}
-.n-link,
-.n-link:link, 
-.n-link:visited, 
-.n-link:active,
-.submenu-link,
-.submenu-link:link, 
-.submenu-link:visited, 
-.submenu-link:active {
+    font-family:Palatino, URW Palladio L;
+    left: 120%;
+    top: 5%; 
+  }
+.menuCSS3 ul {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+  .menuCSS3 a {
     display: block;
-    position: relative;
-    font-size:25px;
-    letter-spacing: 1px;
-    cursor: pointer;
+    padding: 2em;
+    background-color: #F9B53C;
     text-decoration: none;
-    outline: none;
-    color: black;
-}
-
-.n-link,
-.n-link:link, 
-.n-link:visited, 
-.n-link:active {
-    color: black;
-
-}
-.dropdown {
-    position: relative;
-}
-
-.dropdown .n-link {
-    padding-right: 15px;
-    height: 17px;
-    line-height: 17px;
-}
-
-.dropdown .n-link::after {
-    content: "";
-    position:absolute;
-    top: 6px;
-    right: 0;
-    border: 5px solid transparent;
-    border-top-color: #fff;
-}
-.submenu {
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    z-index: 100;
-    width: 320px;
-    margin-left: -100px;
-    background: #fff;
-    border-radius: 3px;
-    line-height: 1.46667;
-    margin-top: -5px;
-    box-shadow: 0 0 8px rgba(0,0,0,.3);
-    opacity:0;
-    -webkit-transform: translate(0, 0) scale(.85);
-    transform: translate(0, 0)scale(.85);
-  
-
-}
-
-.submenu::after, 
-.submenu::before {
-    content: ""; 
-    position: absolute;
-    bottom: 100%;
-    left: 50%;
-    margin-left: -80px;
-    border: 10px solid transparent;
-    height: 0;
-}
-
-.submenu::after {
-    border-bottom-color: #fff;
-}
-
-.submenu::before {
-    margin-left: -13px;
-    border: 13px solid transparent;
-    border-bottom-color: rgba(0,0,0,.1);
-    -webkit-filter:blur(1px);
-    filter:blur(1px);
-}
-
-.submenu-items {
-    list-style: none;
-    padding: 10px 0;
-}
-
-.submenu-item {
+    color: #191C26;
+  }
+  .menuCSS3 a:hover {
+    background-color: #CC673B;
+  }
+  .menuCSS3 ul li ul {
+    display: none;
+  }
+  .menuCSS3 ul li a:hover + ul, .menuCSS3 ul li ul:hover {
     display: block;
-    text-align: left;
-    font-size: 24px;
-}
+  }
 
-.submenu-link,
-.submenu-link:link, 
-.submenu-link:visited, 
-.submenu-link:active {
-    color: black;
-    padding: 10px 20px;
-}
-
-.submenu-link:hover {
-    text-decoration: underline;
-}
-
-.submenu-seperator {
-    height: 0;
-    margin: 12px 10px;
-    border-top: 1px solid #eee;
-}
-
-.show-submenu .submenu {
-    opacity: 1;
-    -webkit-transform: translate(0, 25px) scale(1);
-    transform: translate(0, 25px) scale(1);
-    pointer-events: auto;
-}
-/*	#navegacion
-	{
-	margin: auto; 
-	width:950px; 
-	text-align:right;
-	margin-left: 35%;
-  margin-top: 5%;
-    } 
-    */
- 
-  /*  #lista li a:hover
+   #lista li a:hover
     { 
     	background: #EABCDB;
     }
-    */
-    /*#lista li ul
+    
+    #lista li ul
     { 
     	display: none; 
     	position: absolute;
@@ -216,12 +66,7 @@ top: 7%;
         padding-top: 10px;
         right: 23px;
        }
- */
-#lin1
-{
-top: 8%;
-width: 40%;
-}
+
 .centrado
 {
   position: absolute;
@@ -408,85 +253,43 @@ font-family: Didot, serif;
   <div id="container">
     <div id="mainheading"><h1>KENTIA</h1></div>
  
-<div class="nav">
-  <nav class="n">
-  <ul class="lista">
-<li class="dropdown">
-    
-         
-              <a href="#" class="n-link"><span>contacto </span></a>
-         
-            <nav class="submenu">
-  
-                <ul class="submenu-items">
-                    <li class="submenu-item"><a href="#" class="submenu-link">instagram</a></li>
-                    <li class="submenu-item"><a href="#" class="submenu-link">twitter</a></li>
-                    <li class="submenu-item"><a href="" class="submenu-link">kentiatlx@contactus.com
-                    </a></li>
-                    <li class="submenu-item"><a href="" class="submenu-link">about us
-                    </a></li>
-                    <li>
-                      
-                    </li>
-                </ul>
-            </nav>
-        </li> 
+<nav class="menuCSS3">
+    <ul>
+            <li><a href="#">moda</a>
+        <ul>
+          <li><a href="#">tendencias</a></li>
+          <li><a href="#">temporada</a></li>
+          <li><a href="#">noticias</a></li>
+        </ul>
+      </li>
+      
+      <li><a href="#">kualneskayotl:belleza</a>
+        <ul>
+          <li><a href="#">tendencias</a></li>
+          <li><a href="#">cuida tu piel</a></li>
+          <li><a href="#">noticias</a></li>
 
-<li class="dropdown">
-            <a href="#" class="n-link"><span>pasarelas </span></a>
-            <nav class="submenu">
-                <ul class="submenu-items">
-                    <li class="submenu-item"><a href="#" class="submenu-link">fashion weeks</a></li>
-                    <li class="submenu-item"><a href="#" class="submenu-link">
-                    brands runways
-                    </a></li>
-                </ul>
-            </nav>
-        </li> 
-  
- <li class="dropdown">
-            <a href="#" class="n-link"><span>cultura </span></a>
-            <nav class="submenu">
-                <ul class="submenu-items">
-                    <li class="submenu-item"><a href="#" class="submenu-link">arte</a></li>
-                    <li class="submenu-item"><a href="#" class="submenu-link">
-                    diseño
-                    </a></li>
-                    <li class="submenu-item"><a href="#" class="submenu-link">
-                    sostenibilidad
-                    </a></li>
-                </ul>
-            </nav>
-        </li>
-  <li class="dropdown">
-            <a href="#" class="n-link"><span>kualneskayotl / belleza </span></a>
-            <nav class="submenu">
-                <ul class="submenu-items">
-                    <li class="submenu-item"><a href="#" class="submenu-link">tendencias</a></li>
-                    <li class="submenu-item"><a href="#" class="submenu-link">
-                    noticias
-                    </a></li>
+        </ul>
+      </li>
+      <li><a href="#">cultura</a>
+        <ul>
+          <li><a href="#">arte</a></li>
+          <li><a href="#">diseño</a></li>
+          <li><a href="#">sostenibilidad</a></li>
+          <li><a href="#">moda-feminismo</a></li>
+        </ul>
+      </li>
+      <li><a href="#">contacto</a>
+        <ul>
+          <li><a href="#">instagram</a></li>
+          <li><a href="#">twiter</a></li>
+            <li><a href="#">email</a></li>
+              <li><a href="#contacto1">acerca de nosotras</a></li>
+        </ul>
 
-                </ul>
-            </nav>
-        </li>
-  <li class="dropdown">
-            <a href="#" class="n-link"><span>moda </span></a>
-            <nav class="submenu">
-                <ul class="submenu-items">
-                    <li class="submenu-item"><a href="#" class="submenu-link">noticias</a></li>
-                    <li class="submenu-item"><a href="#" class="submenu-link">
-                    tendencias
-                    </a></li>
-                    <li class="submenu-item"><a href="#" class="submenu-link">
-                   feminismo en la moda
-                    </a></li>
-                </ul>
-            </nav>
-        </li>
-   </ul>
-   </nav>
- </div>
+      </li>
+    </ul>
+  </nav>
 
     <!--<div id="imgprin">
     <img src="fondo1.jpg" alt=""/>
@@ -559,19 +362,25 @@ font-family: Didot, serif;
          <img src="new4.jpg" width="350" height="450" > 
       </div>
         <div id="text4">
-           <h2><a href="#contacto1" class="linknews">Taking over Hollywood </a></h2><p>La entrevista de Yalitza Aparicio para Young Hollywood 2019 en el éxito de <i>Roma</i> y porque perdió en interés en grabar mientras crecia.
+           <h2><a href="#" class="linknews">Taking over Hollywood </a></h2><p>La entrevista de Yalitza Aparicio para Young Hollywood 2019 en el éxito de <i>Roma</i> y porque perdió en interés en grabar mientras crecia.
            </p>
          </div>
-<div id="contact">
-<a name="contacto1"><table>
-  <tr>
-    <td width="500" rowspan="3"> Revista en linea</td><td rowspan="3">Diseño por Ximena Serrano Espindola</td>
+<a name="contacto1"><div id="contact">
+<table >
+  <tr height="100" >
+    <td width="500" align="center" > Revista en linea</td><td width="500" >Diseño por Ximena Serrano Espindola</td><td width="500"> organizacion sin fines de lucro</td>
   </tr>
-<tr><td >organizacion indeoendiente sin fines de lucro</td></tr>
+  <tr height="100">
+    <td width="600">puedes contactarnos a traves de nuestras redes sociales o email </td><td width="800"> todos los derechos reservados</td>
+  </tr>
+  <tr>
+    <td width="900"> 
+    </td>
+    <td width="800" align="center"> kentia surge como un objetivo claro que es la inclusión en la moda </td>
+  </tr>
 </table>
-</a>
 </div>
-
+</a>
 </div>
 <script>
 var slideIndex = 0;
@@ -594,33 +403,7 @@ function showSlides() {
   setTimeout(showSlides, 8000); 
 }
 </script>
-<script >
-  [].slice.call(document.querySelectorAll('.dropdown .n-link')).forEach(function(el){
-    el.addEventListener('click', onClick, false);
-});
 
-function onClick(e){
-    e.preventDefault();
-    var el = this.parentNode;
-    el.classList.contains('show-submenu') ? hideSubMenu(el) : showSubMenu(el);
-}
-
-function showSubMenu(el){
-    el.classList.add('show-submenu');
-    document.addEventListener('click', function onDocClick(e){
-        e.preventDefault();
-        if(el.contains(e.target)){
-            return;
-        }
-        document.removeEventListener('click', onDocClick);
-        hideSubMenu(el);
-    });
-}
-
-function hideSubMenu(el){
-    el.classList.remove('show-submenu');
-}
-</script>
 
 </body>
 </html>
