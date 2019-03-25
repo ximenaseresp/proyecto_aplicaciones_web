@@ -70,7 +70,7 @@
 .centrado
 {
   position: absolute;
-  top: 44%;
+  top: 47%;
   left:60%;
 	margin-left: 10%;
 	color: white;
@@ -82,13 +82,13 @@
 .imgprin
 {
   position: absolute;
-  top: 20%;
+  top: 23%;
   left: 37%;
 }
 .des
 {
   position: absolute;
-  top: 37%;
+  top: 40%;
   left: 55%;
   margin-left: 10%;
   color: white;
@@ -215,7 +215,6 @@ font-family: Palatino, URW Palladio L;
   color: white;
   width: 1900px;
   height: 30%;
-  text-align: center;
 
 }
 #linea{
@@ -227,14 +226,17 @@ left: 35%;
 height: 20px;
 background-color: black;
 }
-#mainheading
+#mainheading h1
 {
 position: absolute;
-top:-13%;
+top: -15%;
 left: 2%;
-font-size: 85px;
+font-size: 200px;
 font-weight: bold;
-color: black;
+    cursor: pointer;
+    text-decoration: none;
+    outline: none;
+    color: black;
 font-family: Didot, serif;
 }
 .linknews{
@@ -244,14 +246,50 @@ font-family: Didot, serif;
     text-decoration: none;
     outline: none;
     color: black;
+}
+#logos{
+  position: absolute;
+  top:28%;
+  left: 10%;
+}
+#redes{
+  position: absolute;
+  left: 7.5%;
+  font-family: Palatino, URW Palladio L;
+  font-size: 20px;
+  top: 10%;
+}
+#breve{
+  position: absolute;
+  width: 10%;
+  left: 27%;
+  top: 10%;
+  font-family: Palatino, URW Palladio L;
+  font-size: 20px;
+  text-align: justify;
 
-
+}
+#xim{
+  position: absolute;
+  top: 10%;
+  left: 50%;
+    font-family: Palatino, URW Palladio L;
+  font-size: 20px;
+  text-align: justify;
+}
+#copyright{
+   position: absolute;
+  top: 30%;
+  left: 78%;
+      font-family: Palatino, URW Palladio L;
+  font-size: 20px;
+  text-align: justify;
 }
 </style>
 </head>
 <body>
   <div id="container">
-    <div id="mainheading"><h1>KENTIA</h1></div>
+    <div id="mainheading"><a href="kentia.html"><h1>KENTIA</h1></a></div>
  
 <nav class="menuCSS3">
     <ul>
@@ -281,8 +319,8 @@ font-family: Didot, serif;
       </li>
       <li><a href="#">contacto</a>
         <ul>
-          <li><a href="#">instagram</a></li>
-          <li><a href="#">twiter</a></li>
+          <li><a href="https://www.instagram.com/?hl=es-la">instagram</a></li>
+          <li><a href="https://twitter.com/">twiter</a></li>
             <li><a href="#">email</a></li>
               <li><a href="#contacto1">acerca de nosotras</a></li>
         </ul>
@@ -366,22 +404,31 @@ font-family: Didot, serif;
            </p>
          </div>
 <a name="contacto1"><div id="contact">
-<table width="1900" >
-  <tr  >
-    <td colspan="1"align="center" height="100" > Revista en linea</td><td colspan="2" align="centar" >Diseño por Ximena Serrano Espindola</td><td colspan="3"> organizacion sin fines de lucro</td>
-  </tr>
-  <tr >
-    <td colspan="2" height="100" width="150">puedes contactarnos a traves de nuestras redes sociales o email </td><td align="center" colspan="1" width="300"> todos los derechos reservados</td>
-  </tr>
-  <tr >
-    <td width="100"> 
-      <img src="twitter.png" height="60" width="60">
-    </td> <td colspan="1"> 
-      <img src="ig.png" height="50" width="50">
-    </td>
-    <td  align="center"> kentia surge como un objetivo claro que es la inclusión en la moda </td>
-  </tr>
-</table>
+<br>
+<br>
+<br>
+<p id="redes">
+           conéctate con nosotras!
+  </p>
+  <p id="logos" > <a href="https://twitter.com/"><img src="twitter.png" width="70" height="70" ></a> <br><a href="https://www.instagram.com/?hl=es-la"> <img src="ig.png" height="50" width="50"></a></p>
+  <p id="breve">
+    kentia es una plataforma en línea que pretende crear una relación entre el pluriculturalismo, la inclusión y la moda (tendencias/belleza)
+  </p>
+  <p id="xim">
+    diseño por Ximena Serrano Espíndola
+    <br>
+    <br>
+    elaborado por Ximena Serrano Espíndola
+    <br>
+    <br>
+    desarrollo por Ximena Serrano Espindola
+    <br> 
+    <br>
+    agrdecimientos a Ximena Serrano Espíndola
+  </p>
+<p id="copyright">
+  todos los derechos reservados © <strong>kentia 2019</strong>
+</p>
 </div>
 </a>
 </div>
