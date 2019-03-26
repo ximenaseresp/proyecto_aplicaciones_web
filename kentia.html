@@ -17,6 +17,7 @@
     font-family:Palatino, URW Palladio L;
     left: 100%;
     top: 5%; 
+    font-size: 25px;
   }
 .menuCSS3 ul {
     display: flex;
@@ -26,7 +27,7 @@
   }
   .menuCSS3 a {
     display: block;
-    padding: 2em;
+    padding: 1.5em;
     background-color: #F9B53C;
     text-decoration: none;
     color: #191C26;
@@ -39,34 +40,27 @@
   }
   .menuCSS3 ul li a:hover + ul, .menuCSS3 ul li ul:hover {
     display: block;
-  }
+  } 
+  .vertical-menu {
+  width: 200px;
+}
 
- /*  #lista li a:hover
-    { 
-    	background: #EABCDB;
-    }
-    
-    #lista li ul
-    { 
-    	display: none; 
-    	position: absolute;
+.vertical-menu a {
+  background-color: #eee;
+  color: black;
+  display: block;
+  padding: 12px;
+  text-decoration: none;
+}
 
-    }
-    #lista li:hover > ul
-    {
-     display: block;
+.vertical-menu a:hover {
+  background-color: #ccc;
+}
 
-    }
-      #lista li ul li a
-      {
-        position: relative;
-        font-size: 20px;
-   
-        padding-bottom: 10px;
-        padding-top: 10px;
-        right: 23px;
-       }
-*/
+.vertical-menu a.active {
+  background-color: #4CAF50;
+  color: white;
+}
 .centrado
 {
   position: absolute;
@@ -292,6 +286,44 @@ font-family: Didot, serif;
     <div id="mainheading"><a href="kentia.html"><h1>KENTIA</h1></a></div>
  
 <nav class="menuCSS3">
+    <ul>
+            <li><a href="#">moda</a>
+        <ul>
+          <li><a href="#">tendencias</a></li>
+          <li><a href="#">temporada</a></li>
+          <li><a href="#noticias">noticias</a></li>
+        </ul>
+      </li>
+      
+      <li><a href="#">kualneskayotl:belleza</a>
+        <ul>
+          <li><a href="#">tendencias</a></li>
+          <li><a href="#">cuida tu piel</a></li>
+          <li><a href="#">noticias</a></li>
+
+        </ul>
+      </li>
+      <li><a href="#">cultura</a>
+        <ul>
+          <li><a href="#">arte</a></li>
+          <li><a href="#">diseño</a></li>
+          <li><a href="#">sostenibilidad</a></li>
+          <li><a href="#">moda-feminismo</a></li>
+        </ul>
+      </li>
+      <li><a href="#">contacto</a>
+        <ul>
+          <li><a href="https://www.instagram.com/?hl=es-la">instagram</a></li>
+          <li><a href="https://twitter.com/">twiter</a></li>
+            <li><a href="#">email</a></li>
+              <li><a href="#contacto1">acerca de nosotras</a></li>
+        </ul>
+
+      </li>
+    </ul>
+  </nav>
+
+<nav class="vertical-menu">
     <ul>
             <li><a href="#">moda</a>
         <ul>
