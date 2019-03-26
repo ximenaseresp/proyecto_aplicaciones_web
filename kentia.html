@@ -4,6 +4,7 @@
 <meta charset="utf-8">
 <title>kentia</title>
 <style>
+  div.lista{width: 180px; height: 400px; background-color:9F5D8A;float: left;}
   #container
   {
     position: relative;
@@ -15,7 +16,7 @@
     z-index: 1;
     position: absolute;
     font-family:Palatino, URW Palladio L;
-    left: 100%;
+    left: 95%;
     top: 5%; 
     font-size: 25px;
   }
@@ -27,7 +28,7 @@
   }
   .menuCSS3 a {
     display: block;
-    padding: 1.5em;
+    padding: 20px;
     background-color: #F9B53C;
     text-decoration: none;
     color: #191C26;
@@ -41,31 +42,55 @@
   .menuCSS3 ul li a:hover + ul, .menuCSS3 ul li ul:hover {
     display: block;
   } 
-.vertical-menu {
-  width: 200px;
-}
+  .menuCSS3ver{
+    position: absolute;
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+top: 30%;
+left: -3%;
+z-index: 1;
+font-family: Palatino, URW Palladio L;
+font-size: 25px;
 
-.vertical-menu a {
-  background-color: #eee;
-  color: black;
-  display: block;
-  padding: 2px;
-  text-decoration: none;
-}
-
-.vertical-menu a:hover {
-  background-color: #ccc;
-}
-
-.vertical-menu a.active {
-  background-color: #4CAF50;
-  color: white;
-}
+    }
+                  
+   .menuCSS3ver li{
+    list-style-type:none;
+    position:relative;
+    width:120px;
+    }
+                
+    .menuCSS3ver li a{
+    text-decoration:none;
+    display:inline-block;
+    padding:12px 10px 20px 10px;
+    width:140px;
+    height:30px;
+    border:1px solid #000;
+    color:#fff;
+    background-color:#000;
+    }
+            
+     .menuCSS3ver li a:hover{
+    color:#000;
+    background-color:#fff;
+                
+    }
+    
+   .menuCSS3ver li ul{
+        display:none;
+        position:absolute;
+        top:0px;
+        left:120px;
+    }
+            
+   .menuCSS3ver  li:hover ul{display:block;}
 .centrado
 {
   position: absolute;
   top: 47%;
-  left:40%;
+  left:44%;
 	margin-left: 10%;
 	color: white;
 	font-size: 70px;
@@ -77,13 +102,13 @@
 {
   position: absolute;
   top: 23%;
-  left: 22%;
+  left: 26%;
 }
 .des
 {
   position: absolute;
   top: 40%;
-  left: 35%;
+  left: 39%;
   margin-left: 10%;
   color: white;
   font-size: 250%;
@@ -216,7 +241,7 @@ font-family: Palatino, URW Palladio L;
   width: 1230px;
   vertical-align: center;
   top: 100%;
-left: 21%;
+left: 25%;
 height: 20px;
 background-color: black;
 }
@@ -291,7 +316,6 @@ font-family: Didot, serif;
         <ul>
           <li><a href="#">tendencias</a></li>
           <li><a href="#">temporada</a></li>
-          <li><a href="#noticias">noticias</a></li>
         </ul>
       </li>
       
@@ -299,7 +323,7 @@ font-family: Didot, serif;
         <ul>
           <li><a href="#">tendencias</a></li>
           <li><a href="#">cuida tu piel</a></li>
-          <li><a href="#">noticias</a></li>
+    
 
         </ul>
       </li>
@@ -323,49 +347,23 @@ font-family: Didot, serif;
     </ul>
   </nav>
 
-<div class="vertical-menu">
- 
-            <li><a href="#">moda</a>
-        <ul>
-          <li><a href="#">tendencias</a></li>
-          <li><a href="#">temporada</a></li>
-          <li><a href="#noticias">noticias</a></li>
+  <nav class="menuCSS3ver">
+ <ul>
+            <li><a href="#">noticias</a><ul>
+                <li><a href="#noticias">moda</a></li>
+                <li><a href="#">belleza</a></li>
+            </ul></li>
+              <li><a href="#">horóscopo</a><ul>
+                <li><a href="#">carta astral</a></li>
+                <li><a href="#">signo lunar</a></li>
+            </ul></li>
+            <li><a href="#">curiosidades</a><ul>
+                <li><a href="#">diseñadoras</a></li>
+                <li><a href="#">diseñadores</a></li>
+            </ul></li>
+            <li><a href="#">news letter</a></li>
         </ul>
-      </li>
-      
-      <li><a href="#">kualneskayotl:belleza</a>
-        <ul>
-          <li><a href="#">tendencias</a></li>
-          <li><a href="#">cuida tu piel</a></li>
-          <li><a href="#">noticias</a></li>
-
-        </ul>
-      </li>
-      <li><a href="#">cultura</a>
-        <ul>
-          <li><a href="#">arte</a></li>
-          <li><a href="#">diseño</a></li>
-          <li><a href="#">sostenibilidad</a></li>
-          <li><a href="#">moda-feminismo</a></li>
-        </ul>
-      </li>
-      <li><a href="#">contacto</a>
-        <ul>
-          <li><a href="https://www.instagram.com/?hl=es-la">instagram</a></li>
-          <li><a href="https://twitter.com/">twiter</a></li>
-            <li><a href="#">email</a></li>
-              <li><a href="#contacto1">acerca de nosotras</a></li>
-        </ul>
-
-      </li>
-  </div>
-
-    <!--<div id="imgprin">
-    <img src="fondo1.jpg" alt=""/>
-    </div>
-   <div  class="centrado">
-    <p><strong>KENTIA</strong></p>
-   </div>-->
+</nav>
 
 <div class="slideshow-container">
    <!--<hr align="center" id="lin1">-->
