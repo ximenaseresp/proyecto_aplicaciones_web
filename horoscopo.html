@@ -1,0 +1,420 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>horoscopo</title>
+	<style type="text/css">
+		  #container
+  {
+    position: relative;
+    width: 980px;
+    height:1000px;
+  }
+
+  .menuCSS3{
+    z-index: 1;
+    position: absolute;
+    font-family:Palatino, URW Palladio L;
+    left: 95%;
+    top: 8%; 
+    font-size: 25px;
+  }
+.menuCSS3 ul {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+  .menuCSS3 a {
+    display: block;
+    padding: 20px;
+    background-color: #F9B53C;
+    text-decoration: none;
+    color: #191C26;
+  }
+  .menuCSS3 a:hover {
+    background-color: #CC673B;
+  }
+  .menuCSS3 ul li ul {
+    display: none;
+  }
+  .menuCSS3 ul li a:hover + ul, .menuCSS3 ul li ul:hover {
+    display: block;
+  }
+  .menuCSS3ver{
+    position: absolute;
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+top: 30%;
+left: -3%;
+z-index: 1;
+font-family: Palatino, URW Palladio L;
+font-size: 25px;
+
+    }
+                  
+   .menuCSS3ver li{
+    list-style-type:none;
+    position:relative;
+    width:120px;
+    }
+                
+    .menuCSS3ver li a{
+    text-decoration:none;
+    display:inline-block;
+    padding:12px 10px 20px 10px;
+    width:140px;
+    height:30px;
+    border:1px solid #000;
+    color:#fff;
+    background-color:#000;
+    }
+            
+     .menuCSS3ver li a:hover{
+    color:#000;
+    background-color:#fff;
+                
+    }
+    
+   .menuCSS3ver li ul{
+        display:none;
+        position:absolute;
+        top:0px;
+        left:120px;
+    }
+            
+   .menuCSS3ver  li:hover ul{display:block;}
+  #mainheading 
+{
+position: absolute;
+top: -4%;
+left: 12%;
+font-size: 200px;
+font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+    outline: none;
+    color: black;
+font-family: Didot, serif;
+}
+#linea{
+  position: absolute;
+  width: 1230px;
+  vertical-align: center;
+  top: 32%;
+left: 20%;
+height: 20px;
+background-color: black;
+}
+#contact{
+  position: absolute;
+  top:200%;
+  background-color: black;
+  color: white;
+  width: 1570px;
+  height: 30%;
+
+}
+#breve{
+  position: absolute;
+  width: 10%;
+  left: 24.5%;
+  top: 10%;
+  font-family: Palatino, URW Palladio L;
+  font-size: 20px;
+  text-align: justify;
+
+}
+#logos{
+  position: absolute;
+  top:28%;
+  left: 7.5%;
+}
+#redes{
+  position: absolute;
+  left: 5%;
+  font-family: Palatino, URW Palladio L;
+  font-size: 20px;
+  top: 10%;
+}
+#xim{
+  position: absolute;
+  top: 10%;
+  left: 47.5%;
+    font-family: Palatino, URW Palladio L;
+  font-size: 20px;
+  text-align: justify;
+}
+#copyright{
+   position: absolute;
+  top: 30%;
+  left: 75.5%;
+      font-family: Palatino, URW Palladio L;
+  font-size: 20px;
+  text-align: justify;
+}
+#ten1{
+position: absolute;
+top: 45%;
+left: 25%;
+     font-family: Palatino, URW Palladio L;
+  
+  text-align: justify;
+}
+#titulo{
+	position: absolute;
+	left: 60%;
+	top: 20%;
+	text-align: center;
+font-size: 30px;
+font-family: Didot;
+}
+#p1
+{
+	font-size: 18px; 
+	position: absolute; 
+	left: 120%;
+	 top: 60%;
+	 width: 500px;
+}
+#linea2{
+  position: absolute;
+  width: 1220px;
+  vertical-align: center;
+  top: 85%;
+left: 22%;
+height: 10px;
+background-color:#5D8762 ;
+}
+#linea3{
+  position: absolute;
+  width: 1220px;
+  vertical-align: center;
+  top: 135%;
+left: 22%;
+height: 10px;
+background-color:#CBC87C;
+}
+#ten2{
+	position: absolute;
+	top: 94%;
+	left: 25%;
+	font-family: Palatino, URW Palladio L;
+
+}
+
+#img2{
+	position:relative;
+	left: 60%;
+}
+#ten3{
+	position: absolute;
+	top: 145%;
+	left: 25%;
+} 
+
+   .modalDialog {
+  position: fixed;
+  font-family: Arial, Helvetica, sans-serif;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0,0,0,0.8);
+  z-index: 99999;
+  opacity:0;
+  -webkit-transition: opacity 400ms ease-in;
+  -moz-transition: opacity 400ms ease-in;
+  transition: opacity 400ms ease-in;
+  pointer-events: none;
+  font-family: Palatino, URW Palladio L;
+}
+.modalDialog:target {
+  opacity:1;
+  pointer-events: auto;
+}
+.modalDialog > div {
+  width: 400px;
+  position: relative;
+  margin: 10% auto;
+  padding: 5px 20px 13px 20px;
+  border-radius: 10px;
+  background: #F7E9EF;
+  background: #F7E9EF;
+  background: -o-linear-gradient(#fff, #999);
+  -webkit-transition: opacity 400ms ease-in;
+-moz-transition: opacity 400ms ease-in;
+transition: opacity 400ms ease-in;
+}
+.close {
+  background:#F7E9EF;
+  color: #FFFFFF;
+  line-height: 25px;
+  position: absolute;
+  right: -12px;
+  text-align: center;
+  top: -10px;
+  width: 24px;
+  text-decoration: none;
+  font-weight: bold;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  border-radius: 12px;
+  -moz-box-shadow: 1px 1px 3px #000;
+  -webkit-box-shadow: 1px 1px 3px #000;
+  box-shadow: 1px 1px 3px #000;
+}
+.close:hover { background: #00d9ff; }
+
+
+</style>
+
+
+</head>
+<body>
+	<div id="container">
+	<header>
+		
+    <div id="mainheading"><a href="kentia.html"><img src="logo.png"></a></div>
+    <nav class="menuCSS3">
+    <ul>
+            <li><a href="#">moda</a>
+        <ul>
+          <li><a href="tendencias.html">tendencias</a></li>
+
+        </ul>
+      </li>
+      
+      <li><a href="#">kualneskayotl:belleza</a>
+        <ul>
+         
+          <li><a href="tips.html">tips</a></li>
+    
+
+        </ul>
+      </li>
+      <li><a href="#">cultura</a>
+        <ul>
+          <li><a href="arte.html">arte</a></li>
+
+        </ul>
+      </li>
+      <li><a href="#">contacto</a>
+        <ul>
+          <li><a href="https://www.instagram.com/?hl=es-la">instagram</a></li>
+          <li><a href="https://twitter.com/">twiter</a></li>
+              <li><a href="#contacto1">acerca de nosotras</a></li>
+        </ul>
+
+      </li>
+    </ul>
+  </nav>
+
+	</header>
+<nav class="menuCSS3ver">
+ <ul>
+         
+              <li><a href="#">horóscopo</a><ul>
+                <li><a href="horoscopo.html">mensual</a></li>
+            </ul></li>
+            <li><a href="#">curiosidades</a><ul>
+                <li><a href="#">historia</a></li>
+            </ul></li>
+            <li><a href="#openModal">registrate</a></li>
+        </ul>
+</nav>
+	<div id="titulo">
+		<h1> TENDENCIAS</h1>
+	</div>
+	<div>
+  <hr id="linea">
+</div>
+	<div id="ten1">
+		<h2 style="font-size: 40px; color: #5D8762; text-transform: capitalize; position: absolute; left: 120%;">Big-Jacket meme </h2>
+		<img src="tendencia1.jpg" width="250" height="250">
+		<img src="ten1.2.png" width="300" height="350" style="position: absolute;left: 340%; top:-5%">
+		<p  id="p1">Comenzó como una broma en instagram y pasó a ser presente dentro de las pasarelas en donde las y los grandes diseñadores comenzaron a implementarlar en sus líneas. Parece no encantarle a todos pero ¿Tú qué opinas?</p>
+
+	</div>
+	<div>
+		<hr id="linea2">
+	</div>
+	<div id="ten2">
+		<div style="font-size: 20px; color: #CBC87C; position: absolute; left: 230%; width: 300px; text-align: right;"><h2 >La marca de los vestidos del verano quiere que cambies tu vestido de flores por este 'slip dress'</h2></div>
+		<div id="img2">
+		<img src="ten2.png" width="250" height="350" >
+	</div>
+		<div style="font-size: 18px; color:black; position: absolute; left: 190%; width: 400px; text-align: justify; top: 60%;">
+		<p>Ni siluetas wrap, ni detalles de volantes, ni botones centrales: este vestido satinado de jacquard en color champagne, con tirantes espagueti y con un discreto bordado floral se aleja bastante del clásico vestido francés de todos los veranos. </p></div>
+	</div>
+	<div>
+		<hr id="linea3">
+	</div>
+	<div id="ten3">
+		<div id="img3">
+			<div style="font-size: 20px; color: #D75238; position: absolute; left: 60%; width: 300px; text-align: justify;"><h2 >
+			Stella McCartney se une a la moda de las calcetas con su nueva linea organica</h2></div>
+			<img src="ten3.1.jpg" height="300" width="300" >
+			<div style="font-size: 18px; color:black; position: absolute; left: 63%; width: 400px; text-align: justify; top: 50%;">
+		<p>Ni siluetas wrap, ni detalles de volantes, ni botones centrales: este vestido satinado de jacquard en color champagne, con tirantes espagueti y con un discreto bordado floral se aleja bastante del clásico vestido francés de todos los veranos. </p></div>
+		<img src="ten3.jpg" height="450" width="300" style="position: relative; left: 90%">
+		
+	</div>
+	</div>
+ 
+	<footer>
+		<a name="contacto1"><div id="contact">
+<br>
+<br>
+<br>
+<p id="redes">
+           conéctate con nosotras!
+  </p>
+  <p id="logos" > <a href="https://twitter.com/"><img src="twitter.png" width="70" height="70" ></a> <br><a href="https://www.instagram.com/?hl=es-la"> <img src="ig.png" height="50" width="50"></a></p>
+  <p id="breve">
+    kentia es una plataforma en línea que pretende crear una relación entre el pluriculturalismo, la inclusión y la moda (tendencias/belleza)
+  </p>
+  <p id="xim">
+    diseño por Ximena Serrano Espíndola
+    <br>
+    <br>
+    elaborado por Ximena Serrano Espíndola
+    <br>
+    <br>
+    desarrollo por Ximena Serrano Espindola
+    <br> 
+    <br>
+    agradecimientos a Ximena Serrano Espíndola
+  </p>
+<p id="copyright">
+  todos los derechos reservados © <strong>2019 kentia</strong>
+</p>
+</div>
+</a> <div id="openModal" class="modalDialog">
+  <div>
+    <a href="#close" title="Close" class="close">X</a>
+    <form action method="get">
+    <h5>DATOS GENERALES</h5>
+  <p><br>nombre:    <input type="text" name="name-control" autofocus required /></p>
+  <p><br>apellidos:  <input type="text" name="name-control" autofocus required /></p>
+  <p><br>email:        <input type="email" name="email-control" required> </p>
+  <p><br>pais:       <input type="text" name="country-control"></p>
+  <h5>GÉNERO</h5>
+<p> Masculino <input type="radio" name="gender-control" value="male">
+</p>
+<p> Femenino <input type="radio" name="gender-control" value="male">
+</p>
+<p>Otro <input type="radio" name="gender-control" value="male">
+</p>
+<p>
+  <input type="submit" value="registrarse"></p>
+</form>
+  </div>
+</div>
+</div>
+	</footer>
+</div>
+</body>
+</html>
