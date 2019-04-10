@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>horoscopo anual</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+   <link rel="stylesheet" type="text/css" href="hor2.css">
+  <style>
+    /* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    
+    /* Add a gray background color and some padding to the footer */
+    footer {
+      background-color: #f2f2f2;
+      padding: 25px;
+    }
+    
+  .carousel-inner img {
+      width: 100%; /* Set width to 100% */
+      margin: auto;
+      min-height:200px;
+  }
+
+  /* Hide the carousel text when the screen is less than 600 pixels wide */
+  @media (max-width: 600px) {
+    .carousel-caption {
+      display: none; 
+    }
+  }
+
+
+
+  </style>
+</head>
+<body>
+
+
+<nav class="navbar navbar">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#"><img src="logo.png" height="150" width="300" id="logo"  > </a>
+    </div>
+    <ul class="nav navbar-nav" id="navegacion" style="   background-color: #F9B53C;
+    text-decoration: none;
+    color: black">
+      <li class="active"><a href="kentia2.html">Home</a></li>
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">moda<span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="tendencias2.html">tendencias</a></li>
+        </ul>
+      </li>
+       <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">kualneskayotl:belleza<span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="tips2.html">tips</a></li>
+        </ul>
+      </li>
+       <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">cultura<span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="arte2.html">arte</a></li>
+        </ul>
+      </li>
+             <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">contacto<span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="https://www.instagram.com/?hl=es-la">instagram</a></li>
+        </ul>
+                <ul class="dropdown-menu">
+          <li><a href="https://twitter.com/">twitter</a></li>
+        </ul>
+                <ul class="dropdown-menu">
+          <li><a href="#contacto1">Acerca de nosotras</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<!--<div class="topnav" id="myTopnav">
+  <a href="#home" class="active">Home</a>
+  <a href="#news">News</a>
+  <a href="#contact">Contact</a>
+  <div class="dropdown">
+    <button class="dropbtn">Dropdown 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="#">Link 1</a>
+      <a href="#">Link 2</a>
+      <a href="#">Link 3</a>
+    </div>
+  </div> 
+  <a href="#about">About</a>
+  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+-->
+<div class="row">
+
+  <section class="col-md-12">
+    <br>
+    <br>
+<br>
+</section>
+</div>
+<section id="row">
+  <article class="col-md-2">
+   
+     <nav class="list-group"> 
+   <ul class="nav">
+    <li>
+        <a href="#" id="btn-1" data-toggle="collapse" data-target="#submenu3" aria-expanded="false" class="list-group-item" style="background-color: black; color: white">horóscopo
+        </a>
+     <ul class="nav collapse" id="submenu3" role="menu" aria-labelledby="btn-1">
+        <li>
+            <a href="horoscopo2.html" class="list-group-item">
+               mensual
+            </a>
+        </li>
+         <li>
+            <a href="horoscopo3.html" class="list-group-item">
+anual            </a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+  <ul class="nav">
+    <li>
+        <a href="#" id="btn-1" data-toggle="collapse" data-target="#submenu2" aria-expanded="false" class="list-group-item" style="background-color: black; color: white" >
+          curiosidades
+        </a>
+     <ul class="nav collapse" id="submenu2" role="menu" aria-labelledby="btn-1">
+        <li>
+            <a href="historia2.html" class="list-group-item">
+               historia
+            </a>
+        </li>
+                <li>
+            <a href="historia3.html" class="list-group-item">
+               datos curiosos
+            </a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+    <ul class="nav">
+    <li>
+        <a href="#openModal" id="btn-1" class="list-group-item" style="background-color: black; color: white">
+         regístrate
+        </a>
+
+    </li>
+  </ul>
+</nav>
+  </article>
+    <article class="col-md-3">
+    <br><br>
+    
+  </article>
+  <article class="col-md-3">
+
+     <h1 style="text-decoration: none; color: black; text-transform: uppercase; text-align: center;">HOROSCOPO</h1></a><br>
+
+<h1 style="text-decoration: none; color: black; text-align:center;">anual</h1></a><br>  </article>
+  <article class="col-md-5">
+    <br><br>
+    
+  </article>
+</section>
+
+  </div>
+
+<div class="container text-center">    
+  
+<section id="row">
+  <section class="col-md-6">
+    <br><br>
+    
+  </section>
+  <section class="col-md-12">
+<hr id="linea">
+<br><br><br><br>
+
+</section>
+
+
+  
+  <div class="row">
+    <article class="col-lg-2">
+      <p style="font-weight: bold; color: black; font-size: 140%;">vida personal</p>
+      <br>
+     <p style="font-size: 100%; text-align: justify; background-color: #EDD0BC; opacity: 0.8; padding: 10px 10px 10px 10px; border-radius: 10px;">Tu regente es el poderoso Marte, y comienzas el año con este planeta viajando a toda velocidad en tu signo. Esto te da un increíble subidón de energía, y marca un buen tono para el resto del año con respecto a objetivos y ambiciones. a principios de octubre, sin embargo, Marte entra a Libra, donde pierde un poco de su poder, así que tal vez no te sientas con tanta espontaneidad e impulso. </p>
+    </article>
+       <article class="col-lg-2">
+              <p style="font-weight: bold; color: black; font-size: 140%;">amor: parejas</p>
+      <br>
+     <p style="font-size: 100%; text-align: justify; background-color: #EDD0BC;opacity: 0.8; padding: 10px 10px 10px 10px;  border-radius: 10px;">Saturno atraviesa el terreno del estricto y terrenal Capricornio este año, lo que le da un giro muy determinado en tu vida amorosa. Te preparas para asumir la responsabilidad por lo que ha sucedido, sucede y sucederá con respecto a tu relación; y quieres hacer lo que sea necesario para que funcione. Este es un gran "te lo dije" para las personas en tu vida que se estaban preguntando si alguna vez ibas a sentar cabeza. </p>
+    </article>
+    <article class="col-lg-4"> 
+      <br>
+      <br>
+          <br>
+      <br>
+    <br> <img src="ARIES.png" class="img-responsive" style="width:100%; text-align:center;" alt="Image"></article>
+          <aside class="col-lg-2">
+                          <p style="font-weight: bold; color: black; font-size: 140%;">amor: solteros</p>
+      <br>
+     <p style="font-size: 100%; text-align: justify; background-color: #EDD0BC;opacity: 0.8; padding: 10px 10px 10px 10px; border-radius: 10px;">Tu planeta regente Marte no está en su momento más feliz cuando se encuentra en Cáncer desde mediados de mayo hasta julio, así que este no es el momento ideal para buscar el amor. Este posicionamiento hace que pierdas algo de tus habituales fuerza y energía, además de un poco de tu atractivo romántico.  </p>
+    </aside>
+   <aside class="col-lg-2">
+   <p style="font-weight: bold; color: black; font-size: 140%;">profesión&dinero</p>
+      <br>
+      <p style="font-size: 100%; text-align: justify; background-color: #EDD0BC; opacity: 0.8; padding: 10px 10px 10px 10px; border-radius: 10px;">Venus rige tu situación económica, y cuando se encuentra en el conservador Tauro a mediados de mayo, buscas valor en las grandes compras y seguridad financiera en general. Normalmente eres una persona que compra de forma compulsiva, pero ahora mismo vale la pena buscar artículos de calidad que durarán un largo tiempo. </p></aside>
+</div>
+ <section class="col-md-12">
+  <br><br>
+
+<br><br><br><br>
+</section>
+  <div class="row">
+    <article class="col-lg-2">
+      <p style="font-weight: bold; color: black; font-size: 140%;">vida personal</p>
+      <br>
+     <p style="font-size: 100%; text-align: justify; background-color: #EDBCC8; opacity: 0.8; padding: 10px 10px 10px 10px; border-radius: 10px;">Tu regente, el amoroso Venus, no atraviesa ningún período retrógrado en el 2019, pero ¿eso significa que tendrás el camino fácil durante todo el año? Es poco probable, Tauro, pero puede que tengas suerte en las áreas dominantes de tu vida regidas por Venus: amor y dinero. Un tránsito que puedes esperar con ansias es una conjunción entre Venus y Júpiter en Sagitario a finales de enero (y de nuevo a finales de noviembre), debido a su despreocupada energía. </p>
+    </article>
+       <article class="col-lg-2">
+              <p style="font-weight: bold; color: black; font-size: 140%;">amor: parejas</p>
+      <br>
+     <p style="font-size: 100%; text-align: justify; background-color: #EDBCC8;opacity: 0.8; padding: 10px 10px 10px 10px;  border-radius: 10px;">Cuando Venus pasa tiempo en el responsable Capricornio a principios de febrero, las cosas se tornan muy serias muy rápido. Si necesitan tener un debate enfocado sobre el futuro, un asunto romántico pendiente, etc., este es un buen momento para hacerlo. Esta es una energía muy lógica, Tauro, pero no le faltan emociones. Puedes tener una charla seria sin que parezca un sermón.</p>
+    </article>
+    <article class="col-lg-4"> 
+      <br>
+      <br>
+          <br>
+      <br>
+    <br> <img src="tauro.png" class="img-responsive" style="width:100%; text-align:center;" alt="Image"></article>
+          <aside class="col-lg-2">
+                          <p style="font-weight: bold; color: black; font-size: 140%;">amor: solteros</p>
+      <br>
+     <p style="font-size: 100%; text-align: justify; background-color: #EDBCC8;opacity: 0.8; padding: 10px 10px 10px 10px; border-radius: 10px;">
+El amoroso Venus pasa tiempo en el extravagante Acuario durante más o menos tres semanas en marzo, lo que puede ser una época muy interesante para tu vida amorosa. Eres un signo estable, al que no le gusta salirse mucho de la normalidad, pero durante este tránsito eres una persona mucho más experimental e innovadora.   </p>
+    </aside>
+   <aside class="col-lg-2">
+   <p style="font-weight: bold; color: black; font-size: 140%;">profesión&dinero</p>
+      <br>
+      <p style="font-size: 100%; text-align: justify; background-color: #EDBCC8; opacity: 0.8; padding: 10px 10px 10px 10px; border-radius: 10px;"> El mayor indicador de si tu profesión está bien encaminada es el laborioso Saturno, que este año se encuentra en su posición ideal en el práctico y enfocado Capricornio. Así que, ¡hurra! Prosperas durante esta unión, ya que significa que no se apresurarán las cosas, y puedes tomarte tu tiempo para que los detalles salgan bien. Tendrás que tener cuidado con el período retrógrado de Saturno desde finales de abril hasta mediados de septiembre.</p></aside>
+</div>
+ <section class="col-md-12">
+  <br><br>
+
+<br><br><br><br>
+</section>
+  <div class="row">
+    <article class="col-lg-2">
+      <p style="font-weight: bold; color: black; font-size: 140%;">vida personal</p>
+      <br>
+     <p style="font-size: 100%; text-align: justify; background-color: #C4EDBC; opacity: 0.8; padding: 10px 10px 10px 10px; border-radius: 10px;">Mercurio, tu comunicativo planeta regente, tiene tres períodos retrógrados este año, en marzo, julio y noviembre (que comienza a finales de octubre), y pasa la mayor parte de sus fases retrógradas en emocionales signos de agua (en contraposición a los enérgicos signos de fuego que visitó el año pasado). Como los signos de agua son muy intuitivos, te beneficiará usar tus instintos cuando sientas confusión o inseguridad al proceder.</p>
+    </article>
+       <article class="col-lg-2">
+              <p style="font-weight: bold; color: black; font-size: 140%;">amor: parejas</p>
+      <br>
+     <p style="font-size: 100%; text-align: justify; background-color: #C4EDBC;opacity: 0.8; padding: 10px 10px 10px 10px;  border-radius: 10px;">Hay una conjunción entre el sol y Plutón en tu signo a mediados de enero que te pone directamente a cargo, y te deja determinar el resultado en la mayoría de los ámbitos de tu vida (incluso el amor). Claro, hay cierto carácter impredecible con el que siempre tendrás que lidiar, pero ahora mismo tus intuiciones sobre tu vida amorosa son certeras. </p>
+    </article>
+    <article class="col-lg-4"> 
+      <br>
+      <br>
+          <br>
+      <br>
+    <br> <img src="geminis.png" class="img-responsive" style="width:100%; text-align:center;" alt="Image"></article>
+          <aside class="col-lg-2">
+                          <p style="font-weight: bold; color: black; font-size: 140%;">amor: solteros</p>
+      <br>
+     <p style="font-size: 100%; text-align: justify; background-color: #C4EDBC;opacity: 0.8; padding: 10px 10px 10px 10px; border-radius: 10px;">
+Venus rige los asuntos del corazón, y forma una positiva conjunción con el afortunado Júpiter en el aventurero Sagitario a finales de enero, lo que ayuda a que tu vida amorosa tenga un gran comienzo. ¡Este favorable tránsito indica que cosas (y personas) hermosas sentirán atracción por ti, Géminis! Ahora el enfoque está en las relaciones, y tu belleza interior es evidente.   </p>
+    </aside>
+   <aside class="col-lg-2">
+   <p style="font-weight: bold; color: black; font-size: 140%;">profesión&dinero</p>
+      <br>
+      <p style="font-size: 100%; text-align: justify; background-color: #C4EDBC; opacity: 0.8; padding: 10px 10px 10px 10px; border-radius: 10px;"> 
+El primero de los períodos retrógrados de Mercurio comienza a principios de marzo y termina cerca del final del mes en el sensible Piscis. Sinceramente, esta no será la mejor época para tu vida profesional o económica. Incluso si sueles ser hábil con las palabras o tienes una oratoria extraordinaria, este tránsito podría hacerte tropezar con tus propias palabras, y hacer que las personas se pregunten si realmente sabes de lo que estás hablando.</p></aside>
+</div>
+ <section class="col-md-12">
+  <br><br>
+
+<br><br><br><br>
+</section>
+
+
+  <div class="row">
+    <article class="col-lg-2">
+      <p style="font-weight: bold; color: black; font-size: 140%;">vida personal</p>
+      <br>
+     <p style="font-size: 100%; text-align: justify; background-color: #EDDDBC; opacity: 0.8; padding: 10px 10px 10px 10px; border-radius: 10px;">Este es tu año: hazlo tuyo, Cáncer. Si sientes que no has estado en control de tu propio destino, es hora de recuperar tu poder y ¡demostrarle al mundo de lo que eres capaz!
+
+Tal vez te hayas recluido en tu cómodo caparazón al final del 2018 gracias a algunas malas experiencias, noticias inesperadas, o varias otras decepciones, así que ahora mismo no te interesa mucho exponer tus emociones puras al mundo. </p>
+    </article>
+       <article class="col-lg-2">
+              <p style="font-weight: bold; color: black; font-size: 140%;">amor: parejas</p>
+      <br>
+     <p style="font-size: 100%; text-align: justify; background-color: #EDDDBC;opacity: 0.8; padding: 10px 10px 10px 10px;  border-radius: 10px;">Te encanta sentir amor, realmente, y eres uno de los pocos signos que se toma las relaciones muy en serio. La luna nueva en Piscis, signo afín de agua, del comienzo de marzo es un grato momento de calma después de la tormenta que trajo el extravagante Acuario, lo que les da tiempo para volver a acomodarse mutuamente, y revaluar sus objetivos y expectativas como pareja. </p>
+    </article>
+    <article class="col-lg-4"> 
+      <br>
+      <br>
+          <br>
+      <br>
+    <br> <img src="cancer.png" class="img-responsive" style="width:100%; text-align:center;" alt="Image"></article>
+          <aside class="col-lg-2">
+                          <p style="font-weight: bold; color: black; font-size: 140%;">amor: solteros</p>
+      <br>
+     <p style="font-size: 100%; text-align: justify; background-color: #EDDDBC;opacity: 0.8; padding: 10px 10px 10px 10px; border-radius: 10px;">
+¿Sientes que estás mejor cuando eres parte de una pareja que cuando estás por tu cuenta? Es verdad que estás muy conforme cuando estás en una relación, pero no te subestimes, Cáncer. Hay una diferencia entre estar a solas y estar en soledad, y te puede ir muy bien con la soltería en el 2019.   </p>
+    </aside>
+   <aside class="col-lg-2">
+   <p style="font-weight: bold; color: black; font-size: 140%;">profesión&dinero</p>
+      <br>
+      <p style="font-size: 100%; text-align: justify; background-color: #EDDDBC; opacity: 0.8; padding: 10px 10px 10px 10px; border-radius: 10px;"> Esa luna nueva en Piscis a principios de marzo de la que hablamos antes también afecta tu trabajo y cuenta bancaria, y te muestra que muchas cosas son posibles; en especial si usas tu creatividad y habilidades artísticas. Sueña en grande, Cáncer, porque puedes manifestar literalmente esos sueños en realidad. </p></aside>
+</div>
+ <section class="col-md-12">
+  <br><br>
+
+<br><br><br><br>
+</section>
+  <div class="row">
+    <article class="col-lg-2">
+      <p style="font-weight: bold; color: black; font-size: 140%;">vida personal</p>
+      <br>
+     <p style="font-size: 100%; text-align: justify; background-color: #EAEDBC; opacity: 0.8; padding: 10px 10px 10px 10px; border-radius: 10px;">¿Qué tal es comenzar tu año con una luna llena (y superluna) en tu signo a finales de enero? Y encima de eso, ¡es un eclipse lunar total! Te será difícil ocultar cualquier cosa, en especial tus verdaderos sentimientos, y el drama será intenso. Experimentarás grandes cambios en esta época, y como un verdadero Leo, querrás divulgarlos (si son buenos).  </p>
+    </article>
+       <article class="col-lg-2">
+              <p style="font-weight: bold; color: black; font-size: 140%;">amor: parejas</p>
+      <br>
+     <p style="font-size: 100%; text-align: justify; background-color: #EAEDBC;opacity: 0.8; padding: 10px 10px 10px 10px;  border-radius: 10px;">Venus, centrado en el amor, está en el serio Capricornio cuando se encuentra con el regenerativo Plutón a finales de febrero, lo que aumenta tus deseos de llevar las cosas al próximo nivel. Capricornio se enfoca mucho en los objetivos, así que pongan algunos planes en marcha ahora para poder celebrar juntos algo grande en el futuro </p>
+    </article>
+    <article class="col-lg-4"> 
+      <br>
+      <br>
+          <br>
+      <br>
+    <br> <img src="leo.png" class="img-responsive" style="width:100%; text-align:center;" alt="Image"></article>
+          <aside class="col-lg-2">
+                          <p style="font-weight: bold; color: black; font-size: 140%;">amor: solteros</p>
+      <br>
+     <p style="font-size: 100%; text-align: justify; background-color: #EAEDBC;opacity: 0.8; padding: 10px 10px 10px 10px; border-radius: 10px;">
+Mercurio tiene tres ciclos retrógrados (en marzo, julio y noviembre), pero antes de que lleguen y compliquen tus comunicaciones, hay una conjunción entre Mercurio y Plutón en el práctico Capricornio a mediados de enero que podría llevar a algunas reflexiones profundas.   </p>
+    </aside>
+   <aside class="col-lg-2">
+   <p style="font-weight: bold; color: black; font-size: 140%;">profesión&dinero</p>
+      <br>
+      <p style="font-size: 100%; text-align: justify; background-color: #EAEDBC; opacity: 0.8; padding: 10px 10px 10px 10px; border-radius: 10px;">Marte está en Aries, signo afín de fuego, el primer día del año, así que empezarás con buen pie. Estas semanas son un gran aumento de energía, lo que te da un exceso de entusiasmo y autoridad. Eres mejor cuando te enfocas en un objetivo en lugar de varios al mismo tiempo, pero puedes distraerte con facilidad. </p></aside>
+</div>
+ <section class="col-md-12">
+  <br><br>
+
+<br><br><br><br>
+</section>
+  <div class="row">
+    <article class="col-lg-2">
+      <p style="font-weight: bold; color: black; font-size: 140%;">vida personal</p>
+      <br>
+     <p style="font-size: 100%; text-align: justify; background-color: #EECEEC; opacity: 0.8; padding: 10px 10px 10px 10px; border-radius: 10px;">Tu año comienza con una luna llena y una superluna en tu signo en febrero, lo que puede hacer que debatas entre tu mundo emocional y tu mundo lógico. Mientras luchas siempre por ser la mejor versión de ti, esto podría causar pensamientos conflictivos sobre la mejor manera de alcanzar tus objetivos. </p>
+    </article>
+       <article class="col-lg-2">
+              <p style="font-weight: bold; color: black; font-size: 140%;">amor: parejas</p>
+      <br>
+     <p style="font-size: 100%; text-align: justify; background-color: #EECEEC;opacity: 0.8; padding: 10px 10px 10px 10px;  border-radius: 10px;">¿Tu vida amorosa en el 2019? ¡Practicidad combinada con pasión!
+
+No es para comenzar el año con un tono desanimado, pero hay una conjunción entre Venus y Saturno a mediados de febrero que podría hacerte sentir en soledad a pesar de estar en una relación. </p>
+    </article>
+    <article class="col-lg-4"> 
+      <br>
+      <br>
+          <br>
+      <br>
+    <br> <img src="virgo.png" class="img-responsive" style="width:100%; text-align:center;" alt="Image"></article>
+          <aside class="col-lg-2">
+                          <p style="font-weight: bold; color: black; font-size: 140%;">amor: solteros</p>
+      <br>
+     <p style="font-size: 100%; text-align: justify; background-color: #EECEEC;opacity: 0.8; padding: 10px 10px 10px 10px; border-radius: 10px;">
+¡Ahórrate el drama! Tu vida amorosa en el 2019 florece bajo circunstancias normales.
+
+Tu regente, Mercurio, forma una conjunción con el pensativo Plutón en Capricornio, signo orientado a los detalles, a mediados de enero, así que te enfocas mucho en el autoanálisis y crecimiento.   </p>
+    </aside>
+   <aside class="col-lg-2">
+   <p style="font-weight: bold; color: black; font-size: 140%;">profesión&dinero</p>
+      <br>
+      <p style="font-size: 100%; text-align: justify; background-color: #EECEEC; opacity: 0.8; padding: 10px 10px 10px 10px; border-radius: 10px;">El potente Marte comienza el año en el energético y ambicioso Aries. Así que sí, deberías ser capaz de lograr muchas cosas ahora en enero. Marte en Aries tiene una vibra muy competitiva que te hace enfrentarte a tus peores rivales y ganarles: una sensación que te hace sentir increíble durante las próximas seis semanas.</p></aside>
+</div>
+ <section class="col-md-12">
+  <br><br>
+
+<br><br><br><br>
+</section>
+<br>
+<br><br><br><br><br>
+
+
+</div>
+
+<footer style="background-color: black; text-decoration:none;color: white;" class="container text-center" >
+  <a name="contacto1"><p style="text-decoration: none; color: white">Acerca de nosotras</p></a>
+
+<div class="row">
+<div class="container text-center">    
+  <div class="row">
+    <article  class="col-sm-3">
+<a href="https://twitter.com/"><img src="twitter.png" width="70" height="70" ></a> <br><a href="https://www.instagram.com/?hl=es-la"> <img src="ig.png" height="50" width="50"></a>
+    </article>
+   <article class="col-sm-3">
+ 
+      <p> 
+    kentia es una plataforma en línea que pretende crear una relación entre el pluriculturalismo, la inclusión y la moda (tendencias/belleza)
+  </p>
+    </article>
+   <article class="col-sm-3">
+
+      <p>    diseño por Ximena Serrano Espíndola
+    <br>
+    <br>
+    elaborado por Ximena Serrano Espíndola
+    <br>
+    <br>
+    desarrollo por Ximena Serrano Espindola
+    <br> 
+    <br>
+    agradecimientos a Ximena Serrano Espíndola
+  </p>
+    </article>
+       <article class="col-sm-3">
+   </p>
+<p>
+  todos los derechos reservados © <strong>2019 kentia</strong>
+</p>
+    </article>
+</div>
+
+</footer>
+<div id="openModal" class="modalDialog">
+  <div>
+    <a href="#close" title="Close" class="close">X</a>
+    <form id="contactForm">
+      <LABEL class="alert">
+        tu opinión ha sido enviada, gracias
+      </LABEL>
+          <p>
+            <label>Nombre</label>
+            <input type="text" name="name" id="name" required>
+          </p>
+          <p>
+            <label>Apellido</label>
+            <input type="text" name="company" id="company">
+          </p>
+          <p>
+            <label>Email</label>
+            <input type="email" name="email" id="email" required>
+          </p>
+          <p>
+            <label>País</label>
+            <input type="text" name="phone" id="phone">
+          </p>
+          <p class="full">
+            <label>Dejanos tu opinión</label>
+            <textarea name="message" rows="5" id="message"></textarea>
+          </p>
+          <p class="full">
+            <button type="submit">Submit</button>
+          </p>
+        </form>
+  </div>
+</div>
+<script src="https://www.gstatic.com/firebasejs/5.9.3/firebase.js"></script>
+<script src="main.js"></script>
+
+</body>
+</html>
