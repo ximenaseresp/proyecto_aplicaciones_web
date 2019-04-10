@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>horoscopo mensual</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+   <link rel="stylesheet" type="text/css" href="hor2.css">
+  <style>
+    /* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    
+    /* Add a gray background color and some padding to the footer */
+    footer {
+      background-color: #f2f2f2;
+      padding: 25px;
+    }
+    
+  .carousel-inner img {
+      width: 100%; /* Set width to 100% */
+      margin: auto;
+      min-height:200px;
+  }
+
+  /* Hide the carousel text when the screen is less than 600 pixels wide */
+  @media (max-width: 600px) {
+    .carousel-caption {
+      display: none; 
+    }
+  }
+
+
+
+  </style>
+</head>
+<body>
+
+
+<nav class="navbar navbar">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#"><img src="logo.png" height="150" width="300" id="logo"  > </a>
+    </div>
+    <ul class="nav navbar-nav" id="navegacion" style="   background-color: #F9B53C;
+    text-decoration: none;
+    color: black">
+      <li class="active"><a href="kentia2.html">Home</a></li>
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">moda<span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="tendencias2.html">tendencias</a></li>
+        </ul>
+      </li>
+       <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">kualneskayotl:belleza<span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="tips2.html">tips</a></li>
+        </ul>
+      </li>
+       <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">cultura<span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="arte2.html">arte</a></li>
+        </ul>
+      </li>
+             <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">contacto<span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="https://www.instagram.com/?hl=es-la">instagram</a></li>
+        </ul>
+                <ul class="dropdown-menu">
+          <li><a href="https://twitter.com/">twitter</a></li>
+        </ul>
+                <ul class="dropdown-menu">
+          <li><a href="#contacto1">Acerca de nosotras</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<!--<div class="topnav" id="myTopnav">
+  <a href="#home" class="active">Home</a>
+  <a href="#news">News</a>
+  <a href="#contact">Contact</a>
+  <div class="dropdown">
+    <button class="dropbtn">Dropdown 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="#">Link 1</a>
+      <a href="#">Link 2</a>
+      <a href="#">Link 3</a>
+    </div>
+  </div> 
+  <a href="#about">About</a>
+  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+-->
+<div class="row">
+
+  <section class="col-md-12">
+    <br>
+    <br>
+<br>
+</section>
+</div>
+<section id="row">
+  <article class="col-md-2">
+   
+     <nav class="list-group"> 
+   <ul class="nav">
+    <li>
+        <a href="#" id="btn-1" data-toggle="collapse" data-target="#submenu3" aria-expanded="false" class="list-group-item" style="background-color: black; color: white">horóscopo
+        </a>
+     <ul class="nav collapse" id="submenu3" role="menu" aria-labelledby="btn-1">
+        <li>
+            <a href="horoscopo2.html" class="list-group-item">
+               mensual
+            </a>
+        </li>
+         <li>
+            <a href="horoscopo3.html" class="list-group-item">
+anual            </a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+  <ul class="nav">
+    <li>
+        <a href="#" id="btn-1" data-toggle="collapse" data-target="#submenu2" aria-expanded="false" class="list-group-item" style="background-color: black; color: white" >
+          curiosidades
+        </a>
+     <ul class="nav collapse" id="submenu2" role="menu" aria-labelledby="btn-1">
+        <li>
+            <a href="historia2.html" class="list-group-item">
+               historia
+            </a>
+        </li>
+                <li>
+            <a href="historia3.html" class="list-group-item">
+               datos curiosos
+            </a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+    <ul class="nav">
+    <li>
+        <a href="#openModal" id="btn-1" class="list-group-item" style="background-color: black; color: white">
+         regístrate
+        </a>
+
+    </li>
+  </ul>
+</nav>
+  </article>
+    <article class="col-md-3">
+    <br><br>
+    
+  </article>
+  <article class="col-md-3">
+
+     <h1 style="text-decoration: none; color: black; text-transform: uppercase;">HOROSCOPO</h1></a><br>
+  </article>
+  <article class="col-md-5">
+    <br><br>
+    
+  </article>
+</section>
+
+  </div>
+
+<div class="container text-center">    
+  
+<section id="row">
+  <section class="col-md-6">
+    <br><br>
+    
+  </section>
+  <section class="col-md-12">
+<hr id="linea">
+<br><br><br><br>
+
+</section>
+
+
+  
+  <div class="row">
+    <article class="col-lg-3">
+      <img src="ARIES.png" class="img-responsive" style="width:80%" alt="Image">
+    </article>
+    <article class="col-lg-3"> 
+    <br><p style="font-size: 100%; text-align: justify;">Abril de 2019 - ¡Feliz cumpleaños, Aries! La luna nueva en Aries del 5 de abril marca un ciclo personal y renacimiento totalmente nuevo. Entonces, ¿quién eres hoy, y qué quieres? ¿Tus acciones están en consonancia con tus palabras? Puede que aún no puedas expresarlo todo, pero reconoce los deseos y/o miedos que te motivan, en especial los secretos que casi nunca admites, ni a los demás ni a ti. Entonces no tendrán que opacar inconscientemente a tus percepciones. </p></article>
+          <aside class="col-lg-3">
+      <img src="tauro.png" class="img-responsive" style="width:90%" alt="Image">
+    </aside>
+   <aside class="col-lg-3">
+      <br><p style="font-size: 100%; text-align: justify;">Abril de 2019 - Urano entró a tu signo el mes pasado, abrió nuevas puertas y despertó tu potencial más profundo. 
+
+Con Venus en Piscis este mes, espera que te lleguen invitaciones glamorosas. Tienes la oportunidad de profundizar amistades y hacer jugadas, conexiones y colaboraciones poderosas. Pero si alguien o algo parece demasiado bueno para ser verdad, sé paciente a medida que se desarrollan las cosas. </p></aside>
+</div>
+ <section class="col-md-12">
+  <br><br>
+
+<br><br><br><br>
+</section>
+ <div class="row">
+    <article class="col-lg-3">
+      <img src="geminis.png" class="img-responsive" style="width:90%" alt="Image">
+    </article>
+    <article class="col-lg-3"> 
+    <br><p style="font-size: 100%; text-align: justify;">Abril de 2019 - Tu regente, Mercurio, está otra vez en su fase directa y, a medida que abril avanza, estás recuperando claridad al navegar por una situación profesional complicada. Tal vez no domines el mundo, pero eres capitán de tu barco, y puedes llevar el timón de tu vida de acuerdo a tus metas más elevadas.  </p></article>
+          <aside class="col-lg-3">
+      <img src="cancer.png" class="img-responsive" style="width:90%" alt="Image">
+    </aside>
+   <aside class="col-lg-3">
+      <br><p style="font-size: 100%; text-align: justify;">Abril de 2019 - En lo profesional, la luna nueva en Aries del 5 de abril marca un nuevo ciclo. Estás en tu mejor momento. Lo que comienzas ahora tiene todas las probabilidades de tener éxito, así que aclara tus metas y ve por el oro. Algunos pueden decir que tus son sueños utópicos. No necesitas que los demás te limiten, pero sí reconoce a quienes te han ayudado a llegar a donde estás ahora. </p></aside>
+</div>
+<section class="col-md-12">
+  <br><br>
+
+<br><br><br><br>
+</section>
+ <div class="row">
+    <article class="col-lg-3">
+      <img src="leo.png" class="img-responsive" style="width:90%" alt="Image">
+    </article>
+    <article class="col-lg-3"> 
+    <br><p style="font-size: 100%; text-align: justify;">Abril de 2019 - Has atravesado muchos cambios últimamente, pero en abril estás ganando perspectiva sobre una situación en la que te has sentido impotente, lo que te permite redireccionar su curso hacia un resultado más deseable. Cuando la luna nueva en Aries se alinea el 5 de abril, estás en un viaje que te lleva a buscar el sentido superior de tu vida. </p></article>
+          <aside class="col-lg-3">
+      <img src="virgo.png" class="img-responsive" style="width:90%" alt="Image">
+    </aside>
+   <aside class="col-lg-3">
+      <br><p style="font-size: 100%; text-align: justify;">Abril de 2019 - Urano entró a tu signo el mes pasado, abrió nuevas puertas y despertó tu potencial más profundo. 
+
+Con Venus en Piscis este mes, espera que te lleguen invitaciones glamorosas. Tienes la oportunidad de profundizar amistades y hacer jugadas, conexiones y colaboraciones poderosas. Pero si alguien o algo parece demasiado bueno para ser verdad, sé paciente a medida que se desarrollan las cosas. </p></aside>
+</div>
+<section class="col-md-12">
+  <br><br>
+
+<br><br><br><br>
+</section>
+ <div class="row">
+    <article class="col-lg-3">
+      <img src="libra.png" class="img-responsive" style="width:90%" alt="Image">
+    </article>
+    <article class="col-lg-3"> 
+    <br><p style="font-size: 100%; text-align: justify;">Abril de 2019 - Tu regente, Mercurio, ya se encuentra directo en Piscis, y estás reflexionando y tomando una conciencia más profunda sobre tus relaciones. Con Venus y Neptuno también en Piscis, las cosas podrían ponerse románticas y soñadas, y surgen oportunidades interesantes y creativas a nivel personal y económico.  </p></article>
+          <aside class="col-lg-3">
+      <img src="escorpion.png" class="img-responsive" style="width:90%" alt="Image">
+    </aside>
+   <aside class="col-lg-3">
+      <br><p style="font-size: 100%; text-align: justify;">Abril de 2019 - La vida está cambiando rápidamente, y la luna nueva el Aries del 5 de abril está dirigiendo tu atención al trabajo, las rutinas diarias y tu salud. Tienes el poder ahora de tomar decisiones saludables que generen una transformación total donde más lo necesitas. Elige lo que sea reafirmante todos los días, y elimina conscientemente los hábitos y adicciones (de salud, trabajo y estilo de vida) que te agoten a nivel emocional, económico, físico, espiritual y mental. Con conciencia, puedes sanar. </p></aside>
+</div>
+<section class="col-md-12">
+  <br><br>
+
+<br><br><br><br>
+</section>
+ <div class="row">
+    <article class="col-lg-3">
+      <img src="sagitario.png" class="img-responsive" style="width:90%" alt="Image">
+    </article>
+    <article class="col-lg-3"> 
+    <br><p style="font-size: 100%; text-align: justify;">Abril de 2019 - Desde que Júpiter regresó a Sagitario en noviembre del año pasado, has crecido en sabiduría y experimentado una sensación de “vuelta a casa”. El 5 de abril, la luna nueva en Aries marca un nuevo ciclo y proceso de regreso a uno mismo. Estás descubriendo qué es lo que te llena de vitalidad a nivel creativo, personal, sexual y romántico. Algo puede sentirse como un riesgo, pero el verdadero riesgo sería dejar pasar una oportunidad de ser feliz. </p></article>
+          <aside class="col-lg-3">
+      <img src="cap.png" class="img-responsive" style="width:90%" alt="Image">
+    </aside>
+   <aside class="col-lg-3">
+      <br><p style="font-size: 100%; text-align: justify;">Abril de 2019 - Cuando comienza abril, Mercurio está directo. Estás aprendiendo cosas o teniendo conversaciones que traen una comprensión más profunda de una situación multifacética, lo que te permite negociar acuerdos.  </p></aside>
+</div>
+<section class="col-md-12">
+  <br><br>
+
+<br><br><br><br>
+</section>
+ <div class="row">
+    <article class="col-lg-3">
+      <img src="acuario.png" class="img-responsive" style="width:90%" alt="Image">
+    </article>
+    <article class="col-lg-3"> 
+    <br><p style="font-size: 100%; text-align: justify;">AAbril de 2019 - El mes pasado, Urano, tu regente moderno, entró a Tauro, lo que generó avances en el frente doméstico y te pidió que vayas más despacio, estés más presente, y vivas el momento. Tal vez lleve algunas semanas hacerte la idea de todo lo que se ha desarrollado últimamente. Pero cuando la luna nueva en Aries se alinea el 5 de abril, estás aprendiendo nueva información que te pide deshacerte de algunas percepciones y mantener la mente abierta. </p></article>
+          <aside class="col-lg-3">
+      <img src="piscis.png" class="img-responsive" style="width:90%" alt="Image">
+    </aside>
+   <aside class="col-lg-3">
+      <br><p style="font-size: 100%; text-align: justify;">Abril de 2019 - La luna nueva en Aries del 5 de abril marca un nuevo ciclo que hace crecer tu autoestima y bienestar, a nivel emocional y económico. Pero el éxito y el dinero no son nada si no puedes compartirlos con las personas que amas. 
+
+En lo profesional, has estado explorando nuevas fronteras desde que Júpiter entró a Sagitario el noviembre de 2018. Júpiter se torna estacionario retrógrado el día 10 (hasta el 11 de agosto), lo que marca una época de revisión y corrección de rumbos en caso de que te hayas descarrilado mucho de tus objetivos.  </p></aside>
+</div>
+<br>
+<br><br><br><br><br>
+
+
+</div>
+
+<footer style="background-color: black; text-decoration:none;color: white;" class="container text-center" >
+  <a name="contacto1"><p style="text-decoration: none; color: white">Acerca de nosotras</p></a>
+
+<div class="row">
+<div class="container text-center">    
+  <div class="row">
+    <article  class="col-sm-3">
+<a href="https://twitter.com/"><img src="twitter.png" width="70" height="70" ></a> <br><a href="https://www.instagram.com/?hl=es-la"> <img src="ig.png" height="50" width="50"></a>
+    </article>
+   <article class="col-sm-3">
+ 
+      <p> 
+    kentia es una plataforma en línea que pretende crear una relación entre el pluriculturalismo, la inclusión y la moda (tendencias/belleza)
+  </p>
+    </article>
+   <article class="col-sm-3">
+
+      <p>    diseño por Ximena Serrano Espíndola
+    <br>
+    <br>
+    elaborado por Ximena Serrano Espíndola
+    <br>
+    <br>
+    desarrollo por Ximena Serrano Espindola
+    <br> 
+    <br>
+    agradecimientos a Ximena Serrano Espíndola
+  </p>
+    </article>
+       <article class="col-sm-3">
+   </p>
+<p>
+  todos los derechos reservados © <strong>2019 kentia</strong>
+</p>
+    </article>
+</div>
+
+</footer>
+<div id="openModal" class="modalDialog">
+  <div>
+    <a href="#close" title="Close" class="close">X</a>
+    <form id="contactForm">
+      <LABEL class="alert">
+        tu opinión ha sido enviada, gracias
+      </LABEL>
+          <p>
+            <label>Nombre</label>
+            <input type="text" name="name" id="name" required>
+          </p>
+          <p>
+            <label>Apellido</label>
+            <input type="text" name="company" id="company">
+          </p>
+          <p>
+            <label>Email</label>
+            <input type="email" name="email" id="email" required>
+          </p>
+          <p>
+            <label>País</label>
+            <input type="text" name="phone" id="phone">
+          </p>
+          <p class="full">
+            <label>Dejanos tu opinión</label>
+            <textarea name="message" rows="5" id="message"></textarea>
+          </p>
+          <p class="full">
+            <button type="submit">Submit</button>
+          </p>
+        </form>
+  </div>
+</div>
+<script src="https://www.gstatic.com/firebasejs/5.9.3/firebase.js"></script>
+<script src="main.js"></script>
+
+</body>
+</html>
