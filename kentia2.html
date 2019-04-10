@@ -33,118 +33,90 @@
       display: none; 
     }
   }
-  #logo{position: absolute; top: -28%;}
-  #navegacion{position: absolute;left: 40%;
 
-  }
-  .menuCSS3{
-    z-index: 1;
-    position: absolute;
-    font-family:Palatino, URW Palladio L;
-    left: 95%;
-    top: 8%; 
-    font-size: 25px;
-  }
-.menuCSS3 ul {
-    display: flex;
-    padding: 0;
-    margin: 0;
-    list-style: none;
-  }
-  .menuCSS3 a {
-    display: block;
-    padding: 20px;
-    background-color: #F9B53C;
-    text-decoration: none;
-    color: #191C26;
-  }
-  .menuCSS3 a:hover {
-    background-color: #CC673B;
-  }
-  .menuCSS3 ul li ul {
-    display: none;
-  }
-  .menuCSS3 ul li a:hover + ul, .menuCSS3 ul li ul:hover {
-    display: block;
-  } 
+
   </style>
 </head>
 <body>
 
-<nav class="navbar navbar-light">
+
+<nav class="navbar navbar-">
   <div class="container-fluid">
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>                        
-      </button>
-      <a class="navbar-brand" href="#"><img src="logo.png" width="200" height="100"  id="logo"></a>
+      <a class="navbar-brand" href="#">WebSiteName</a>
     </div>
-    <div class="collapse navbar-collapse" id="navbarNavDropdown"">
-      <ul class="nav navbar-nav" id="navegacion"  >
-        <li class="active"><a href="#">Home</a></li>
-               <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          moda
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          <a class="dropdown-item" href="#">Tendencias</a>
-
-        </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="#">Home</a></li>
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Page 1 <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Page 1-1</a></li>
+          <li><a href="#">Page 1-2</a></li>
+          <li><a href="#">Page 1-3</a></li>
+        </ul>
       </li>
-              <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          kualneskayotl:belleza
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          <a class="dropdown-item" href="#">Action</a><br>
-          <a class="dropdown-item" href="#">Another action</a>
-          <a class="dropdown-item" href="#">Something else here</a>
-        </div>
-      </li>
-             <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-        cultura
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          <a class="dropdown-item" href="#">Action</a>
-          <a class="dropdown-item" href="#">Another action</a>
-          <a class="dropdown-item" href="#">Something else here</a>
-        </div>
-      </li>
-              <li class="nav-item dropdown" >
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          contacto
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          <a class="dropdown-item" href="#">instagram</a><br>
-          <a class="dropdown-item" href="#">twitter</a><br>
-          <a class="dropdown-item" href="#">acerca de nosotras</a>
-        </div>
-      </li>
-      </ul>
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-      </ul>
-    </div>
+      <li><a href="#">Page 2</a></li>
+      <li><a href="#">Page 3</a></li>
+    </ul>
   </div>
 </nav>
 
+<div class="row">
+  <section class="col-md-1">
+    
+     <nav class="list-group"> 
+   <ul class="nav">
+    <li>
+        <a href="#" id="btn-1" data-toggle="collapse" data-target="#submenu1" aria-expanded="false" class="list-group-item">horóscopo
+        </a>
+     <ul class="nav collapse" id="submenu1" role="menu" aria-labelledby="btn-1">
+        <li>
+            <a href="#" class="list-group-item">
+               mensual
+            </a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+  <ul class="nav">
+    <li>
+        <a href="#" id="btn-1" data-toggle="collapse" data-target="#submenu2" aria-expanded="false" class="list-group-item">
+          curiosidades
+        </a>
+     <ul class="nav collapse" id="submenu2" role="menu" aria-labelledby="btn-2">
+        <li>
+            <a href="#" class="list-group-item">
+                historia
+            </a>
+      </ul>
+    </li>
+  </ul>
+    <ul class="nav">
+    <li>
+        <a href="#openModal" id="btn-1" class="list-group-item">
+         regístrate
+        </a>
+
+    </li>
+  </ul>
+</nav>
+  </section>
+  <div class="col-md-10">
 <div id="myCarousel" class="carousel slide" data-ride="carousel">
     <!-- Indicators -->
     <ol class="carousel-indicators">
       <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
       <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
     </ol>
 
     <!-- Wrapper for slides -->
     <div class="carousel-inner" role="listbox">
+      
       <div class="item active">
         <img src="fondo2.jpg" alt="Image">
         <div class="carousel-caption">
           <h3>vocablo proveniente del náhuatl que significa vestirse</h3>
-          <p>kentia es un espacio incluyente, enfocado en el pluriculturalismo y su influencia en la moda</p>
+          
         </div>      
       </div>
 
@@ -154,7 +126,14 @@
           <h3>kentia x yalitza </h3>
         </div>      
       </div>
-    </div>
+
+
+      <div class="item">
+        <img src=fondo3.jpg alt="Image">
+        <div class="carousel-caption">
+         <p>kentia es un espacio incluyente, enfocado en el pluriculturalismo y su influencia en la moda</p>
+        </div>      
+      </div>    </div>
 
     <!-- Left and right controls -->
     <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
@@ -166,9 +145,12 @@
       <span class="sr-only">Next</span>
     </a>
 </div>
+</div>
+  </div>
   
+
 <div class="container text-center">    
-  <h3>What We Do</h3><br>
+  <h3>NEWS / YANKUIK </h3><br>
   <div class="row">
     <article class="col-sm-3">
       <img src="new1.jpg" class="img-responsive" style="width:100%" alt="Image">
@@ -206,6 +188,26 @@
   <p>slfkb</p>
 
 </footer>
-
+<div id="openModal" class="modalDialog">
+  <div>
+    <a href="#close" title="Close" class="close">X</a>
+    <form action method="get">
+    <h5>DATOS GENERALES</h5>
+  <p><br>nombre:    <input type="text" name="name-control" autofocus required /></p>
+  <p><br>apellidos:  <input type="text" name="name-control" autofocus required /></p>
+  <p><br>email:        <input type="email" name="email-control" required> </p>
+  <p><br>pais:       <input type="text" name="country-control"></p>
+  <h5>GÉNERO</h5>
+<p> Masculino <input type="radio" name="gender-control" value="male">
+</p>
+<p> Femenino <input type="radio" name="gender-control" value="male">
+</p>
+<p>Otro <input type="radio" name="gender-control" value="male">
+</p>
+<p>
+  <input type="submit" value="registrarse"></p>
+</form>
+  </div>
+</div>
 </body>
 </html>
