@@ -1,7 +1,6 @@
 
   #logo{position: relative; top: -108%;}
-  #navegacion{position:relative;left:20%;
-    top: 30px;
+  #navegacion{position:relative;float: right;
 
 }
  .modalDialog {
@@ -82,6 +81,10 @@ padding-right: 10px;
 text-align: justify;
 border-radius: 10px;}
 
+video {
+  width: 100%;
+  height: auto;
+}
 #linea{
 
   vertical-align: center;
