@@ -91,3 +91,21 @@ video {
 
 height: 20px;
 background-color: black;
+}
+
+#linea2{
+
+  vertical-align: center;
+
+height: 17px;
+background-color: #5D8762;
+}
+#linea3{
+
+  vertical-align: center;
+
+height: 17px;
+background-color: #CBC87C;
+}
+
+
