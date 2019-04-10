@@ -65,3 +65,26 @@ transition: opacity 400ms ease-in;
   margin-bottom:10px;
   display:none;
 }
+
+.footer{
+  background-color: black;
+  color: white;
+}
+body{
+font-family: Palatino, URW Palladio L;
+}
+
+
+ .new1{background-color:     background-color: #F6DADA;
+  color: black;
+padding-left: 10px;
+padding-right: 10px;
+text-align: justify;
+border-radius: 10px;}
+
+#linea{
+
+  vertical-align: center;
+
+height: 20px;
+background-color: black;
