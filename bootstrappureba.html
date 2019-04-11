@@ -3,261 +3,133 @@
 <head>
 	<title>pruebaaaa</title>
 	<style type="text/css">
-		.scrollbar {
-margin-left: 30px;
-float: left;
-height: 300px;
-width: 65px;
-background: #fff;
-overflow-y: scroll;
-margin-bottom: 25px;
-}
-.force-overflow {
-min-height: 450px;
+
+
+
+.thumb {
+    width: 400px;
+    height: 300px;
+    margin: 70px auto;
+    perspective: 1000px;
 }
 
-.scrollbar-primary::-webkit-scrollbar {
-width: 12px;
-background-color: #F5F5F5; }
+.thumb a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
+    url("https://d13yacurqjgara.cloudfront.net/users/269311/screenshots/1508393/the_optimist_lives_on_by_huanle-d6yprp1_o_1x.jpg");
+    background-size: 0, cover;
+    transform-style: preserve-3d;
+    transition: all 0.5s;
+}
 
-.scrollbar-primary::-webkit-scrollbar-thumb {
-border-radius: 10px;
--webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
-background-color: #4285F4; }
+.thumb:hover a {
+    transform: rotateX(80deg);
+    transform-origin: bottom;
+}
+.thumb a:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 36px;
+    background: inherit;
+    background-size: cover, cover;
+    background-position: bottom;
+    transform: rotateX(90deg);
+    transform-origin: bottom;
+}
+.thumb a span {
+    color: white;
+    text-transform: uppercase;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    font: bold 12px/36px "Open Sans";
+    text-align: center;
+    transform: rotateX(-89.99deg);
+    transform-origin: top;
+    z-index: 1;
+}
+.thumb a:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 100px 50px rgba(0, 0, 0, 0.5);
+    transition: all 0.5s;
+    opacity: 0.15;
+    transform: rotateX(95deg) translateZ(-80px) scale(0.75);
+    transform-origin: bottom;
+}
 
-.scrollbar-danger::-webkit-scrollbar-track {
--webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
-background-color: #F5F5F5;
-border-radius: 10px; }
+.thumb:hover a:before {
+    opacity: 1;
+    box-shadow: 0 0 25px 25px rgba(0, 0, 0, 0.5);
+    transform: rotateX(0) translateZ(-60px) scale(0.85);
+}
 
-.scrollbar-danger::-webkit-scrollbar {
-width: 12px;
-background-color: #F5F5F5; }
+.snip1325 {
+  position: relative;
+  overflow: hidden;
+  margin: 10px;
+  min-width: 255px;
+  max-width: 315px;
+  height: 220px;
+  width: 100%;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+}
+.snip1325 img {
+  height: 100%;
+  position: absolute;
+  right: 0;
+  -webkit-transition: all 2s ease-out;
+  transition: all 2s ease-out;
+}
+.snip1325:hover img,
+.snip1325.hover img {
+  -webkit-transform: translateX(130px);
+  transform: translateX(130px);
+}
+/* Demo purposes only */
+body {
+  background-color: #212121;
+}
 
-.scrollbar-danger::-webkit-scrollbar-thumb {
-border-radius: 10px;
--webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
-background-color: #ff3547; }
 
-.scrollbar-warning::-webkit-scrollbar-track {
--webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
-background-color: #F5F5F5;
-border-radius: 10px; }
-
-.scrollbar-warning::-webkit-scrollbar {
-width: 12px;
-background-color: #F5F5F5; }
-
-.scrollbar-warning::-webkit-scrollbar-thumb {
-border-radius: 10px;
--webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
-background-color: #FF8800; }
-
-.scrollbar-success::-webkit-scrollbar-track {
--webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
-background-color: #F5F5F5;
-border-radius: 10px; }
-
-.scrollbar-success::-webkit-scrollbar {
-width: 12px;
-background-color: #F5F5F5; }
-
-.scrollbar-success::-webkit-scrollbar-thumb {
-border-radius: 10px;
--webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
-background-color: #00C851; }
-
-.scrollbar-info::-webkit-scrollbar-track {
--webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
-background-color: #F5F5F5;
-border-radius: 10px; }
-
-.scrollbar-info::-webkit-scrollbar {
-width: 12px;
-background-color: #F5F5F5; }
-
-.scrollbar-info::-webkit-scrollbar-thumb {
-border-radius: 10px;
--webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
-background-color: #33b5e5; }
-
-.scrollbar-default::-webkit-scrollbar-track {
--webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
-background-color: #F5F5F5;
-border-radius: 10px; }
-
-.scrollbar-default::-webkit-scrollbar {
-width: 12px;
-background-color: #F5F5F5; }
-
-.scrollbar-default::-webkit-scrollbar-thumb {
-border-radius: 10px;
--webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
-background-color: #2BBBAD; }
-
-.scrollbar-secondary::-webkit-scrollbar-track {
--webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
-background-color: #F5F5F5;
-border-radius: 10px; }
-
-.scrollbar-secondary::-webkit-scrollbar {
-width: 12px;
-background-color: #F5F5F5; }
-
-.scrollbar-secondary::-webkit-scrollbar-thumb {
-border-radius: 10px;
--webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
-background-color: #aa66cc; }
-#btnbootstrap{position: absolute; left: 80%; top: 50%;}
 	</style>
 	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 
 </head>
 <body>
-<div class="scrollbar scrollbar-primary">
-  <div class="force-overflow"></div>
-</div>
-<div >
-<a href="https://www.youtube.com/watch?v=F4oHuML9U2A&list=RDMMJrOrlhjIYVk&index=17" class="btn btn-lg btn-default"><span class="glyphicon glyphicon-heart"></span> Más sobre los signos</a></div>
-<div id="btnbootstrap">
-<a href="#" class="btn btn-lg btn-info"><span class="glyphicon glyphicon-play"></span> Videos de moda</a>
-</div>
+
+<figure class="snip1325"><a href="#"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/ls-sample4.jpg" alt="ls-sample4"/></a></figure>
+<figure class="snip1325 hover"><a href="#"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/ls-sample7.jpg" alt="ls-sample7"/></a></figure>
+<figure class="snip1325"><a href="#"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/ls-sample6.jpg" alt="ls-sample6"/></a></figure>
+
+<script>
+$(".hover").mouseleave(
+  function () {
+    $(this).removeClass("hover");
+  }
+);
+
+
+
+</script>
+
 </body>
-<nav class="navbar navbar-light">
-  <div class="container">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>                        
-      </button>
-      <a class="navbar-brand" href="#"><img src="logo.png" width="200" height="100"  id="logo"></a>
-    </div>
-    <div class="collapse navbar-collapse" id="navbarNavDropdown" id="container">
-      <ul class="nav navbar-nav" id="navegacion"  >
-        <li class="active"><a href="#">Home</a></li>
-               <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          moda
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          <a class="dropdown-item" href="#">Tendencias</a>
-
-        </div>
-      </li>
-              <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          kualneskayotl:belleza
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          <a class="dropdown-item" href="#">Action</a><br>
-          <a class="dropdown-item" href="#">Another action</a>
-          <a class="dropdown-item" href="#">Something else here</a>
-        </div>
-      </li>
-             <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-        cultura
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          <a class="dropdown-item" href="#">Action</a>
-          <a class="dropdown-item" href="#">Another action</a>
-          <a class="dropdown-item" href="#">Something else here</a>
-        </div>
-      </li>
-              <li class="nav-item dropdown" >
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          contacto
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          <a class="dropdown-item" href="#">instagram</a><br>
-          <a class="dropdown-item" href="#">twitter</a><br>
-          <a class="dropdown-item" href="#">acerca de nosotras</a>
-        </div>
-      </li>
-      </ul>
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
 
 
 
 
 
 
-<nav class="navbar navbar-">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="#"><img src="logo.png" class="img-responsive" alt="Cinque Terre" width="304" height="236" id="logo"> </a>
-    </div>
-    <ul class="nav navbar-nav">
-      <li class="active"><a href="kentia2.html">Home</a></li>
-      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">moda<span class="caret"></span></a>
-        <ul class="dropdown-menu">
-          <li><a href="#">tendencias</a></li>
-        </ul>
-      </li>
-       <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">kualneskayotl:belleza<span class="caret"></span></a>
-        <ul class="dropdown-menu">
-          <li><a href="#">tips</a></li>
-        </ul>
-      </li>
-       <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">cultura<span class="caret"></span></a>
-        <ul class="dropdown-menu">
-          <li><a href="#">arte</a></li>
-        </ul>
-      </li>
-    </ul>
-  </div>
-</nav>
-
-
-
-
-    <!-- Indicators -->
-    <ol class="carousel-indicators">
-      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-      <li data-target="#myCarousel" data-slide-to="1"></li>
-      <li data-target="#myCarousel" data-slide-to="2"></li>
-    </ol>
-
-    <!-- Wrapper for slides -->
-    <div class="carousel-inner" role="listbox">
-      
-      <div class="item active">
-        <img src="fondo2.jpg" alt="Image">
-        <div class="carousel-caption">
-          <h3>vocablo proveniente del náhuatl que significa vestirse</h3>
-          
-        </div>      
-      </div>
-
-      <div class="item">
-        <img src=fondo1.jpg alt="Image">
-        <div class="carousel-caption">
-          <h3>kentia x yalitza </h3>
-        </div>      
-      </div>
-
-
-      <div class="item">
-        <img src=fondo3.jpg alt="Image">
-        <div class="carousel-caption">
-         <p>kentia es un espacio incluyente, enfocado en el pluriculturalismo y su influencia en la moda</p>
-        </div>      
-      </div>    </div>
-
-    <!-- Left and right controls -->
-    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-      <span class="sr-only">Next</span>
-    </a>
-</div>
+    
 </html>
